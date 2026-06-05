@@ -119,13 +119,13 @@ img { max-width: 100%; }
 }
 
 .nav-logo {
-    height: 70px;
+    height: 55px;
     filter: brightness(0) invert(1);
     margin-left: 80px;
 }
 
 .nav-logo-footer {
-    height: 80px;
+    height: 70px;
     filter: brightness(0) invert(1);
     margin-left: 15px;
     top: 100px;
@@ -1155,7 +1155,7 @@ img { max-width: 100%; }
         display: block;
         margin: 0 auto;
         position: relative;
-        top: 100px; /* sesuaikan nilainya */
+        margin-bottom: 20px;
         margin-left: 0;
     }
     .footer-desc {
