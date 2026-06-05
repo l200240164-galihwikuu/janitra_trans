@@ -1153,10 +1153,8 @@ img { max-width: 100%; }
     }
     .nav-logo-footer {
         display: block;
-        margin: 0 auto;
-        position: relative;
+        margin: 0 auto 20px auto;
         margin-bottom: 20px;
-        margin-left: 0;
     }
     .footer-desc {
         text-align: center;
