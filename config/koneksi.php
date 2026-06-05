@@ -1,4 +1,8 @@
 <?php
+$test = mysqli_connect('acela.proxy.rlwy.net', 'root', 'xapNcEqwGUVxXVmZLlODhEBCWbcpbJRX', 'railway', 14270);
+echo "Error: " . mysqli_connect_error();
+die();
+
 define('DB_HOST', 'acela.proxy.rlwy.net');
 define('DB_USER', 'root');
 define('DB_PASS', 'PASSWORD_KAMU');
