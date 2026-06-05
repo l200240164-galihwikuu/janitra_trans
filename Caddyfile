@@ -1,4 +1,7 @@
 :8080 {
     root * /app
+    
+    redir /admin /admin/login.php
+    
     php_server
 }
