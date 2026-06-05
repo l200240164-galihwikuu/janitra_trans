@@ -133,7 +133,7 @@ include 'includes/header.php';
                         </div>
                     </div>
                     <div style="border-radius:var(--radius-sm);overflow:hidden;">
-                        <img src="assets/images/janitra_hitam2.jpg"
+                        <img src="assets/images/janitra_hitam2.jpeg"
                              alt="Interior Bus"
                              style="width:100%;height:260px;object-fit:cover;">
                     </div>
