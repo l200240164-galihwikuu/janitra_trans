@@ -11,11 +11,7 @@ $wa_msg = urlencode('Halo PT Janitra Surya Trans, saya ingin menanyakan informas
 
             <!-- Brand -->
             <div class="col-lg-4 col-md-6">
-                <div style="display:flex;justify-content:center;align-items:center;margin-bottom:14px;">
-                    <div style=border-radius:10px;padding:8px 12px;display:flex;align-items:center;gap:8px;">
-                        <img src="assets/images/logo.png" class="nav-logo-footer">
-                    </div>
-                </div>
+                <img src="assets/images/logo.png" class="nav-logo-footer">
                 <p class="footer-desc">
                     PT Janitra Surya Trans — Perusahaan layanan transportasi bus pariwisata premium berbasis di Malang.
                     Berdiri sejak 24 April 2025. Motto kami: <em style="color:rgba(255,255,255,0.7);">"Anda Puas Beritahu Relasi, Anda Kecewa Beritahu Kami."</em>
