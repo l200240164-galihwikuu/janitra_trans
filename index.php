@@ -28,10 +28,6 @@ include 'includes/header.php';
 
             <!-- Konten -->
             <div class="col-lg-6 hero-content">
-                <div class="hero-badge">
-                    <i class="fas fa-shield-alt"></i>
-                    Berdiri Sejak 24 April 2025
-                </div>
                 <h1 class="hero-title">
                     <span class="brand-name">JANITRA SURYA</span>
                     <span class="outline-text">TRANS</span>
