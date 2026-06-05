@@ -1195,20 +1195,6 @@ img { max-width: 100%; }
     .hero-btn-group{flex-direction:column}
     .btn-merah-putih,.btn-outline-putih{justify-content:center}
 
-    .keunggulan-card {
-        padding: 12px 8px !important;
-    }
-
-    .keunggulan-card p {
-        font-size: 0.68rem !important;
-    }
-    .keunggulan-card div[style*="font-size:1.8 rem"] {
-        font-size: 1.3rem !important;
-        margin-bottom: 4px !important;
-    }
-    .keunggulan-card div[style*="font-size0.78rem"] {
-        font-size: 0.62rem !important;
-    }
 }
 
 
