@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 $judul_halaman = 'Booking';
 $halaman_aktif = 'booking';
 $base_url = '';
