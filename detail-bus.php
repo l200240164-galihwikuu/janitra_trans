@@ -127,7 +127,7 @@ include 'includes/header.php';
                 ['assets/images/kursi-belakang.jpg','Kursi Tampak Belakang',false],
                 ['assets/images/interior dalam 1.jpg','Kursi Tampak Depan',false],
                 ['assets/images/Usb.jpg','USB Charger',false],
-                ['assets/images/Bagasi_dalam.jpg','Bagasi dalam yang luas',true],
+                ['assets/images/Bagasi_dalam.jpg','Bagasi dalam yang luas',false],
             ];
             foreach ($interior_imgs as $img): ?>
             <div class="col-<?= $img[2] ? 'md-8' : 'md-4' ?>">
