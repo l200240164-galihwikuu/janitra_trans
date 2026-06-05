@@ -97,22 +97,23 @@ include 'includes/header.php';
 
                 <!-- 3 keunggulan utama (persis dari proposal hal.2) -->
                 <div class="row g-3">
-                    <div class="col-md-4 fade-in">
-                        <div style="background:var(--abu);border-radius:var(--radius-sm);padding:20px;text-align:center;border-top:3px solid var(--merah); height:100%;">
+
+                    <div class="col-4 col-md-4 fade-in">
+                        <div class="keunggulan-card">
                             <div style="font-size:1.8rem;margin-bottom:8px;">✅</div>
                             <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--hitam);margin-bottom:6px;">Kelayakan Jalan</div>
                             <p style="font-size:0.78rem;color:var(--abu-teks);margin:0;line-height:1.6;">Bus selalu dalam kondisi prima dengan perawatan rutin berkala.</p>
                         </div>
                     </div>
-                    <div class="col-md-4 fade-in" data-delay="80">
-                        <div style="background:var(--abu);border-radius:var(--radius-sm);padding:20px;text-align:center;border-top:3px solid var(--merah); height:100%;">
+                    <div class="col-4 col-md-4 fade-in" data-delay="80">
+                        <div class="keunggulan-card">
                             <div style="font-size:1.8rem;margin-bottom:8px;">💰</div>
                             <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--hitam);margin-bottom:6px;">Ramah Kantong</div>
                             <p style="font-size:0.78rem;color:var(--abu-teks);margin:0;line-height:1.6;">Harga terjangkau dengan fasilitas lengkap dan pelayanan prima.</p>
                         </div>
                     </div>
-                    <div class="col-md-4 fade-in" data-delay="160">
-                        <div style="background:var(--abu);border-radius:var(--radius-sm);padding:20px;text-align:center;border-top:3px solid var(--merah); height:100%;">
+                    <div class="col-4 col-md-4 fade-in" data-delay="160">
+                        <div class="keunggulan-card">
                             <div style="font-size:1.8rem;margin-bottom:8px;">👨‍✈️</div>
                             <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--hitam);margin-bottom:6px;">Crew Profesional</div>
                             <p style="font-size:0.78rem;color:var(--abu-teks);margin:0;line-height:1.6;">Crew ramah, sopan, berpengalaman & bertanggung jawab.</p>
