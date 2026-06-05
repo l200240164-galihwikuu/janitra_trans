@@ -148,5 +148,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script>
+<script>
+window.addEventListener('load', function() {
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+        const btn = document.querySelector(`.gal-filter[data-filter="${hash}"]`);
+        if (btn) btn.click();
+    }
+});
+</script>
 
 <?php include 'includes/footer.php'; ?>
