@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div style="text-align:center;margin-bottom:16px;">
                 <img src="../assets/images/logo.png"
                     alt="Logo Janitra Surya"
-                    style="height:100px;">
+                    style="height: 90px;">
                 </div>
 
                 <div>

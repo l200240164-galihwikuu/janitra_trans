@@ -6,7 +6,7 @@
 
             <img src="../assets/images/logo.png"
                  alt="Logo Janitra Surya"
-                 style="height:70px;margin-bottom:10px;filter: brightness(0) invert(1);">
+                 style="height:60px;margin-bottom:10px;filter: brightness(0) invert(1);">
 
             <div style="
                 font-size:0.58rem;
