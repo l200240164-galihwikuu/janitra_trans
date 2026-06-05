@@ -1,5 +1,5 @@
 <?php
-define('DB_HOST', 'acela.proxy.rlwy.net');
+define('DB_HOST', 'mysql.railway.internal');
 define('DB_USER', 'root');
 define('DB_PASS', 'xapNcEqwGUVxXVmZLlODhEBCWbcpbJRX');
 define('DB_NAME', 'railway');
