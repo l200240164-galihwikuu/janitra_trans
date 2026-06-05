@@ -318,9 +318,6 @@ include 'includes/header.php';
             <a href="booking.php" class="btn-merah-putih">
                 <i class="fas fa-calendar-check"></i> Form Booking Online
             </a>
-            <a href="https://wa.me/6281233624797" target="_blank" class="btn-outline-putih">
-                <i class="fab fa-whatsapp"></i> 0812-3362-4797
-            </a>
         </div>
     </div>
 </section>
