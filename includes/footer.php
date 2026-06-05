@@ -39,10 +39,9 @@ $wa_msg = urlencode('Halo PT Janitra Surya Trans, saya ingin menanyakan informas
             <div class="col-lg-2 col-md-6 col-6">
                 <h6>Layanan</h6>
                 <ul class="footer-links">
-                    <li><a href="<?= $base_url ?>galeri.php#eksterior">Wisata Keluarga</a></li>
+                    <li><a href="<?= $base_url ?>galeri.php#wisata">Wisata Keluarga</a></li>
                     <li><a href="<?= $base_url ?>galeri.php#studytour">Study Tour</a></li>
                     <li><a href="<?= $base_url ?>galeri.php#ziarah">Ziarah Wali</a></li>
-                    <li><a href="<?= $base_url ?>galeri.php#gathering">Gathering</a></li>
                 </ul>
             </div>
 
