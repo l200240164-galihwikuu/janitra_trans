@@ -4,7 +4,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
     header('Location: login.php'); exit;
 }
 
-include '../../config/koneksi.php';
+include '../../src/config/koneksi.php';
 
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 $query = mysqli_query($conn, "SELECT * FROM galeri WHERE id='$id'");
