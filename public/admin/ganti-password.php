@@ -10,7 +10,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
 
 $halaman_admin = 'ganti-password';
 
-include '../../config/koneksi.php';
+include '../../src/config/koneksi.php';
 
 $pesan       = '';
 $tipe_pesan  = '';
