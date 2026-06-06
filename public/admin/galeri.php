@@ -5,7 +5,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
 }
 $halaman_admin = 'galeri';
 
-include '../config/koneksi.php';
+include '../../config/koneksi.php';
 
 $query = mysqli_query($conn, "SELECT * FROM galeri ORDER BY id DESC");
 $total = mysqli_num_rows($query);
