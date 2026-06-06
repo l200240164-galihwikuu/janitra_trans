@@ -258,7 +258,7 @@ include 'includes/header.php';
         <div class="text-center mb-5">
             <div class="section-label" style="justify-content:center;">Fasilitas Bus</div>
             <h2 class="section-title">Fasilitas <span class="red">Lengkap</span> di Dalam Bus</h2>
-            <p class="section-subtitle mx-auto">Semua fasilitas dari proposal kami tersedia untuk kenyamanan perjalanan Anda.</p>
+            <p class="section-subtitle mx-auto">Semua fasilitas dari tersedia untuk kenyamanan perjalanan Anda.</p>
         </div>
         <div class="row g-4">
             <?php
