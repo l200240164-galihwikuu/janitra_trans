@@ -282,7 +282,7 @@ include '../src/includes/header.php';
                 ['💡','Lampu Baca & Tirai','Lampu baca individual dan tirai jendela untuk privasi dan kenyamanan membaca tanpa mengganggu penumpang lain.',
                  'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&q=70'],
                 ['🧳','Bagasi Dalam','Ruang bagasi dalam bus, cukup untuk koper dan barang bawaan seluruh rombongan.',
-                 'assets/images/fasilitas/bagasi_dalam.jpg'],
+                 'assets/images/fasilitas/Bagasi_dalam.jpg'],
                 ['🛡️','APAR & Palu Pemecah Kaca','Standar K3 terpenuhi: APAR dan palu pemecah kaca tersedia di setiap bus untuk keselamatan penumpang.',
                  'assets/images/fasilitas/apar.jpeg'],
                 ['🌬️','Air Suspension','Sistem air suspension memberikan kenyamanan maksimal. Guncangan di jalan diminimalisir untuk perjalanan halus.',
