@@ -28,7 +28,7 @@ include '../src/includes/header.php';
             <div class="col-lg-7 fade-in">
                 <!-- Foto utama -->
                 <div style="border-radius:var(--radius);overflow:hidden;margin-bottom:12px;position:relative;cursor:pointer;"
-                    onclick="openLightbox('assets/images/janitra2.jpg','Bus Janitra Surya - 2 bus premium dengan fasilitas lengkap')">
+                    onclick="openLightbox('assets/images/janitra99.jpg','Bus Janitra Surya - Bus premium dengan fasilitas lengkap')">
                     <img id="mainBusImg"
                         src="assets/images/janitra99.jpg"
                         alt="Jetbus 3++ SHD Janitra Surya"
@@ -45,11 +45,11 @@ include '../src/includes/header.php';
                 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
                     <?php
                     $thumbs = [
-                        ['assets/images/janitra2bus.jpg','Janitra Surya'],
-                        ['assets/images/janitra_hitam.jpg','Tampak Depan'],
-                        ['assets/images/janitra2.jpg','Di Lokasi Parkir'],
+                        ['assets/images/janitra2bus.jpg','Janitra Surya Trans'],
+                        ['assets/images/janitra_hitam.jpg','Janitra Surya Trans'],
+                        ['assets/images/janitra2.jpg','Janitra Surya Trans'],
                         ['assets/images/interior.jpg','Interior Kabin'],
-                        ['assets/images/interior dalam 1.jpg','Interior'],
+                        ['assets/images/janitra_hitam2.jpg','Janitra Surya Trans'],
                         ['assets/images/janitra1.jpg','Janitra Surya Trans'],
                     ];
                     foreach ($thumbs as $t): ?>
@@ -96,14 +96,14 @@ include '../src/includes/header.php';
 
                 <div style="display:flex;gap:12px;">
                     <a href="booking.php" style="flex:1;background:var(--merah-tua);color:white;padding:14px;border-radius:var(--radius-sm);font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.85rem;text-transform:uppercase;text-align:center;letter-spacing:0.5px;text-decoration:none;transition:all 0.3s;"
-                       onmouseover="this.style.background='var(--merah-gelap)'"
-                       onmouseout="this.style.background='var(--merah-tua)'">
+                        onmouseover="this.style.background='var(--merah-gelap)'"
+                        onmouseout="this.style.background='var(--merah-tua)'">
                         <i class="fas fa-calendar-check me-1"></i> Booking
                     </a>
                     <a href="https://wa.me/6281233624797" target="_blank"
-                       style="background:#25D366;color:white;padding:14px 18px;border-radius:var(--radius-sm);font-size:1.1rem;flex-shrink:0;display:flex;align-items:center;text-decoration:none;transition:all 0.3s;"
-                       onmouseover="this.style.background='#128C7E'"
-                       onmouseout="this.style.background='#25D366'">
+                        style="background:#25D366;color:white;padding:14px 18px;border-radius:var(--radius-sm);font-size:1.1rem;flex-shrink:0;display:flex;align-items:center;text-decoration:none;transition:all 0.3s;"
+                        onmouseover="this.style.background='#128C7E'"
+                        onmouseout="this.style.background='#25D366'">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
@@ -123,11 +123,12 @@ include '../src/includes/header.php';
         <div class="row g-3">
             <?php
             $interior_imgs = [
-                ['assets/images/interior.jpg','Interior Bus',true],
-                ['assets/images/kursi-belakang.jpg','Kursi Tampak Belakang',false],
-                ['assets/images/interior dalam 1.jpg','Kursi Tampak Depan',false],
-                ['assets/images/Usb.jpg','USB Charger',false],
-                ['assets/images/Bagasi_dalam.jpg','Bagasi dalam yang luas',false],
+                ['assets/images/interior.jpg','Interior Bus',false],
+                ['assets/images/fasilitas/TV.jpg','TV Android',false],
+                ['assets/images/fasilitas/kursi.jpg','Kursi yang lebar % nyaman',false],
+                ['assets/images/fasilitas/ac.jpg','AC & USB Charger',false],
+                ['assets/images/fasilitas/Bagasi_dalam.jpg','Bagasi dalam yang luas',false],
+                ['assets/images/fasilitas/dispenser2.jpg','Dispenser Air & Welcome Drink',false],
             ];
             foreach ($interior_imgs as $img): ?>
             <div class="col-<?= $img[2] ? 'md-8' : 'md-4' ?>">
@@ -150,7 +151,7 @@ include '../src/includes/header.php';
         <div class="text-center mb-5">
             <div class="section-label" style="justify-content:center;">Spesifikasi Fasilitas</div>
             <h2 class="section-title">Fasilitas <span class="red">Bus</span></h2>
-            <p class="section-subtitle mx-auto">Semua fasilitas sesuai dengan proposal resmi PT Janitra Surya Trans.</p>
+            <p class="section-subtitle mx-auto"> Janitra Surya Trans menyediakan berbagai fasilitas modern untuk menunjang kenyamanan dan keamanan perjalanan Anda.</p>
         </div>
         <div class="row g-4">
             <?php
@@ -168,8 +169,8 @@ include '../src/includes/header.php';
             foreach ($fasilitas_detail as $i => $f): ?>
             <div class="col-6 col-lg-4 col-md-4 fade-in" data-delay="<?= $i*50 ?>">
                 <div class="fasilitas-item" style="background:var(--abu);border-radius:var(--radius-sm);padding:22px;display:flex;align-items:flex-start;gap:14px;border-left:4px solid <?= $f[3] ?>;transition:var(--transition);"
-                     onmouseover="this.style.background='white';this.style.boxShadow='var(--shadow-card)'"
-                     onmouseout="this.style.background='var(--abu)';this.style.boxShadow='none'">
+                    onmouseover="this.style.background='white';this.style.boxShadow='var(--shadow-card)'"
+                    onmouseout="this.style.background='var(--abu)';this.style.boxShadow='none'">
                     <div style="width:44px;height:44px;background:<?= $f[3] ?>;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;"><?= $f[0] ?></div>
                     <div>
                         <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.85rem;text-transform:uppercase;color:var(--hitam);margin-bottom:5px;"><?= $f[1] ?></div>
@@ -187,7 +188,7 @@ include '../src/includes/header.php';
 <!-- CTA -->
 <section class="cta-section">
     <div class="container" style="position:relative;z-index:1;">
-        <h2>SIAP MEMESAN BUS?</h2>
+        <h2>INGIN MEMESAN BUS?</h2>
         <p>Hubungi kami sekarang dan dapatkan penawaran terbaik!</p>
         <div class="d-flex gap-3 justify-content-center flex-wrap">
             <a href="booking.php" class="btn-merah-putih"><i class="fas fa-calendar-check"></i> Booking Online</a>
