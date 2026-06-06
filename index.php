@@ -272,7 +272,7 @@ include 'includes/header.php';
                 ['❄️','AC Dingin','AC berkualitas tinggi dengan pendinginan merata di seluruh kabin. Tetap segar meski perjalanan jauh.',
                  'assets/images/fasilitas/ac.jpeg'],
                 ['🛏️','Bantal & Selimut','Setiap penumpang mendapat bantal dan selimut untuk kenyamanan istirahat selama perjalanan panjang.',
-                 'assets/images/fasilitas/bantal.jpg'],
+                 'assets/images/fasilitas/bantal.jpeg'],
                 ['💧','Dispenser & Welcome Drink','Tersedia dispenser air minum dan welcome drink untuk menyambut penumpang di awal perjalanan.',
                  'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=70'],
                 ['📺','Android TV & Mic Wireless','Android TV layar besar dengan mic wireless untuk hiburan, karaoke, dan presentasi selama perjalanan.',
