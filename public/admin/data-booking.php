@@ -4,7 +4,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
     header('Location: login.php'); exit;
 }
 
-include '../config/koneksi.php';
+include '../../config/koneksi.php';
 $halaman_admin = 'booking';
 $pesan = ''; $tipe = '';
 
