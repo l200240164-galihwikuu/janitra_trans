@@ -3,7 +3,7 @@ session_start();
 if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true) {
     header('Location: dashboard.php'); exit;
 }
-include '../src/config/koneksi.php';
+include '../../src/config/koneksi.php';
 $pesan_error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
