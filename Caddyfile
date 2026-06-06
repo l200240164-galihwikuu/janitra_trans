@@ -1,5 +1,5 @@
 :8080 {
-    root * /app
+    root * /app/public
     
     redir /admin /admin/login.php
     
