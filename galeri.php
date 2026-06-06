@@ -30,7 +30,6 @@ include 'includes/header.php';
             <button class="gal-filter" data-filter="interior">🪑 Interior</button>
             <button class="gal-filter" data-filter="wisata">🏖️ Wisata</button>
             <button class="gal-filter" data-filter="studytour">🎓 Study Tour</button>
-            <button class="gal-filter" data-filter="ziarah">🕌 Ziarah</button>
         </div>
     </div>
 </section>

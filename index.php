@@ -96,21 +96,27 @@ include 'includes/header.php';
 
                     <div class="col-4 col-md-4 fade-in">
                         <div style="background:var(--abu);border-radius:var(--radius-sm);padding:20px;text-align:center;border-top:3px solid var(--merah); height:100%;align-items:justify;">
-                            <div style="font-size:1.8rem;margin-bottom:8px;">✅</div>
+                            <div style="margin-bottom:8px;">
+                                <img src="assets/images/icon/travel.png" alt="Kelayakan Jalan" style="width:40px;height:40px;" />
+                            </div>
                             <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--hitam);margin-bottom:6px;">Kelayakan Jalan</div>
                             <p style="font-size:0.78rem;color:var(--abu-teks);margin:0;line-height:1.6;">Bus selalu dalam kondisi prima dengan perawatan rutin berkala.</p>
                         </div>
                     </div>
                     <div class="col-4 col-md-4 fade-in" data-delay="80">
                         <div style="background:var(--abu);border-radius:var(--radius-sm);padding:20px;text-align:center;border-top:3px solid var(--merah); height:100%;align-items: justify;">
-                            <div style="font-size:1.8rem;margin-bottom:8px;">💰</div>
+                            <div style="margin-bottom:8px;">
+                                <img src="assets/images/icon/money-bag.png" alt="Ramah Kantong" style="width:40px;height:40px;" />
+                            </div>
                             <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--hitam);margin-bottom:6px;">Ramah Kantong</div>
                             <p style="font-size:0.78rem;color:var(--abu-teks);margin:0;line-height:1.6;">Harga terjangkau dengan fasilitas lengkap dan pelayanan prima.</p>
                         </div>
                     </div>
                     <div class="col-4 col-md-4 fade-in" data-delay="160">
                         <div style="background:var(--abu);border-radius:var(--radius-sm);padding:20px;text-align:center;border-top:3px solid var(--merah); height:100%;align-items: justify;">
-                            <div style="font-size:1.8rem;margin-bottom:8px;">👨‍✈️</div>
+                            <div style="margin-bottom:8px;">
+                                <img src="assets/images/icon/steward.png" alt="Crew Profesional" style="width:40px;height:40px;" />
+                            </div>
                             <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--hitam);margin-bottom:6px;">Crew Profesional</div>
                             <p style="font-size:0.78rem;color:var(--abu-teks);margin:0;line-height:1.6;">Crew ramah, sopan, berpengalaman & bertanggung jawab.</p>
                         </div>
@@ -156,17 +162,19 @@ include 'includes/header.php';
         <div class="row g-4">
             <?php
             $keung = [
-                ['🦺','Kelayakan Jalan Terjamin','Bus selalu dalam kondisi prima dengan perawatan rutin berkala. Surat kelayakan jalan lengkap dan sesuai peruntukan.'],
-                ['❄️','AC Dingin Merata','AC berkualitas tinggi memastikan kabin tetap sejuk dan nyaman sepanjang perjalanan, berapapun jumlah penumpang.'],
-                ['🛡️','Asuransi Perjalanan','Setiap perjalanan dilindungi asuransi (APAR & palu pemecah kaca standar K3). Keselamatan Anda nomor satu.'],
-                ['👨‍✈️','Driver & Crew Profesional','Pengemudi berpengalaman, sopan, ramah, dan bertanggung jawab. Siap mengantarkan Anda ke tujuan dengan selamat.'],
-                ['💰','Harga Ramah di Kantong','Fasilitas premium dengan harga terjangkau dan transparan. Tidak ada biaya tersembunyi dalam setiap penawaran.'],
-                ['📱','Booking Mudah','Pesan via website atau WhatsApp. Konfirmasi cepat, proses mudah, dan layanan responsif 7 hari seminggu.'],
+                ['assets/images/icon/travel.png','Kelayakan Jalan Terjamin','Bus selalu dalam kondisi prima dengan perawatan rutin berkala. Surat kelayakan jalan lengkap dan sesuai peruntukan.'],
+                ['assets/images/icon/air-conditioner.png','AC Dingin Merata','AC berkualitas tinggi memastikan kabin tetap sejuk dan nyaman sepanjang perjalanan, berapapun jumlah penumpang.'],
+                ['assets/images/icon/business.png','Asuransi Perjalanan','Setiap perjalanan dilindungi asuransi (APAR & palu pemecah kaca standar K3). Keselamatan Anda nomor satu.'],
+                ['assets/images/icon/driver.png','Driver & Crew Profesional','Pengemudi berpengalaman, sopan, ramah, dan bertanggung jawab. Siap mengantarkan Anda ke tujuan dengan selamat.'],
+                ['assets/images/icon/hand.png','Harga Ramah di Kantong','Fasilitas premium dengan harga terjangkau dan transparan. Tidak ada biaya tersembunyi dalam setiap penawaran.'],
+                ['assets/images/icon/booking.png','Booking Mudah','Pesan via website atau WhatsApp. Konfirmasi cepat, proses mudah, dan layanan responsif 7 hari seminggu.'],
             ];
                 foreach ($keung as $i => $k): ?>
                 <div class="col-6 col-md-6 col-lg-4 fade-in" data-delay="<?= $i*60 ?>">
                 <div class="keung-card">
-                    <div class="keung-icon"><?= $k[0] ?></div>
+                    <div class="keung-icon">
+                    <img src="<?= $k[0] ?>" alt="<?= $k[1] ?>" class="keung-icon-img">
+                </div>
                     <h5><?= $k[1] ?></h5>
                     <p><?= $k[2] ?></p>
                 </div>
@@ -185,15 +193,13 @@ include 'includes/header.php';
             <h2 class="section-title">Kami Siap <span class="red">Melayani</span></h2>
             <p class="section-subtitle mx-auto">Dari wisata keluarga hingga perjalanan korporat, kami siap hadir untuk Anda.</p>
         </div>
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center  ">
             <?php
             $layanan = [
                 ['emoji'=>'🏖️','judul'=>'Wisata Keluarga','desc'=>'Perjalanan wisata ke pantai, pegunungan, dan berbagai destinasi menarik di Jawa Timur & sekitarnya.',
-                 'img'=>'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80'],
+                 'img'=>'assets/images/wisata.jpg'],
                 ['emoji'=>'🎓','judul'=>'Study Tour','desc'=>'Layanan study tour dan study kampus untuk SD, SMP, SMA, dan perguruan tinggi. Ratusan sekolah telah mempercayai kami.',
                  'img'=>'assets/images/study-tour.jpeg'],
-                ['emoji'=>'🕌','judul'=>'Ziarah Wali','desc'=>'Perjalanan ziarah wali songo dan tempat-tempat suci di Jawa dengan suasana khidmat dan nyaman.',
-                 'img'=>'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=500&q=80'],
                 ['emoji'=>'🏢','judul'=>'Gathering Perusahaan','desc'=>'Transportasi gathering kantor, outing, team building, dan berbagai acara perusahaan dengan pelayanan profesional.',
                  'img'=>'assets/images/gathering.jpeg'],
             ];
@@ -264,9 +270,9 @@ include 'includes/header.php';
             <?php
             $fas = [
                 ['❄️','AC Dingin','AC berkualitas tinggi dengan pendinginan merata di seluruh kabin. Tetap segar meski perjalanan jauh.',
-                 'https://images.unsplash.com/photo-1601760562234-9814eea6db90?w=400&q=70'],
+                 'assets/images/fasilitas/ac.jpeg'],
                 ['🛏️','Bantal & Selimut','Setiap penumpang mendapat bantal dan selimut untuk kenyamanan istirahat selama perjalanan panjang.',
-                 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&q=70'],
+                 'assets/images/fasilitas/bantal.jpg'],
                 ['💧','Dispenser & Welcome Drink','Tersedia dispenser air minum dan welcome drink untuk menyambut penumpang di awal perjalanan.',
                  'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=70'],
                 ['📺','Android TV & Mic Wireless','Android TV layar besar dengan mic wireless untuk hiburan, karaoke, dan presentasi selama perjalanan.',
@@ -275,8 +281,8 @@ include 'includes/header.php';
                  'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=70'],
                 ['💡','Lampu Baca & Tirai','Lampu baca individual dan tirai jendela untuk privasi dan kenyamanan membaca tanpa mengganggu penumpang lain.',
                  'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&q=70'],
-                ['🧳','Bagasi Luas','Ruang bagasi di bawah kabin yang sangat luas, cukup untuk koper dan barang bawaan seluruh rombongan.',
-                 'https://images.unsplash.com/photo-1594971475674-6a97558f7836?w=400&q=70'],
+                ['🧳','Bagasi Dalam','Ruang bagasi dalam bus, cukup untuk koper dan barang bawaan seluruh rombongan.',
+                 'assets/images/fasilitas/bagasi_dalam.jpg'],
                 ['🛡️','APAR & Palu Pemecah Kaca','Standar K3 terpenuhi: APAR dan palu pemecah kaca tersedia di setiap bus untuk keselamatan penumpang.',
                  'assets/images/fasilitas/apar.jpeg'],
                 ['🌬️','Air Suspension','Sistem air suspension memberikan kenyamanan maksimal. Guncangan di jalan diminimalisir untuk perjalanan halus.',

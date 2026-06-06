@@ -45,12 +45,12 @@ include 'includes/header.php';
                 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
                     <?php
                     $thumbs = [
-                        ['assets/images/janitra2bus.jpg','Tampak Samping Kanan'],
+                        ['assets/images/janitra2bus.jpg','Janitra Surya'],
                         ['assets/images/janitra_hitam.jpg','Tampak Depan'],
                         ['assets/images/janitra2.jpg','Di Lokasi Parkir'],
                         ['assets/images/interior.jpg','Interior Kabin'],
-                        ['assets/images/janitra_hitam2.jpg','Di Perjalanan'],
-                        ['assets/images/janitra1.jpg','Wisata'],
+                        ['assets/images/interior dalam 1.jpg','Interior'],
+                        ['assets/images/janitra1.jpg','Janitra Surya Trans'],
                     ];
                     foreach ($thumbs as $t): ?>
                     <div style="border-radius:var(--radius-sm);overflow:hidden;cursor:pointer;aspect-ratio:4/3;"
