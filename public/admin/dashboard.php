@@ -4,7 +4,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
     header('Location: login.php'); exit;
 }
 $halaman_admin = 'dashboard';
-include '../src/config/koneksi.php';
+include '../../src/config/koneksi.php';
 
 $total_all       = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS t FROM booking"))['t'];
 $total_pending   = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS t FROM booking WHERE status='Pending'"))['t'];
