@@ -61,7 +61,7 @@ include '../src/includes/header.php';
     <div class="container">
 
         <?php
-        include 'config/koneksi.php';
+        include '../src/config/koneksi.php';
 
         $query = mysqli_query($conn, "SELECT * FROM galeri ORDER BY id DESC");
         ?>
