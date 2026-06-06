@@ -1,5 +1,5 @@
 <?php
-include '../src/config/koneksi.php';
+include '../../src/config/koneksi.php';
 
 $judul = $_POST['judul'];
 $kategori = $_POST['kategori'];
