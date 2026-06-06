@@ -136,7 +136,7 @@ include '../src/includes/header.php';
                         </div>
                     </div>
                     <div style="border-radius:var(--radius-sm);overflow:hidden;">
-                        <img src="assets/images/janitra_hitam2.jpeg"
+                        <img src="assets/images/janitra_hitam2.jpg"
                              alt="Interior Bus"
                              style="width:100%;height:260px;object-fit:cover;">
                     </div>
@@ -270,7 +270,7 @@ include '../src/includes/header.php';
             <?php
             $fas = [
                 ['❄️','AC Dingin','AC berkualitas tinggi dengan pendinginan merata di seluruh kabin. Tetap segar meski perjalanan jauh.',
-                 'assets/images/fasilitas/ac.jpeg'],
+                 'assets/images/fasilitas/ac.jpg'],
                 ['🛏️','Bantal & Selimut','Setiap penumpang mendapat bantal dan selimut untuk kenyamanan istirahat selama perjalanan panjang.',
                  'assets/images/fasilitas/bantal.jpeg'],
                 ['💧','Dispenser & Welcome Drink','Tersedia dispenser air minum dan welcome drink untuk menyambut penumpang di awal perjalanan.',
@@ -286,7 +286,7 @@ include '../src/includes/header.php';
                 ['🛡️','APAR & Palu Pemecah Kaca','Standar K3 terpenuhi: APAR dan palu pemecah kaca tersedia di setiap bus untuk keselamatan penumpang.',
                  'assets/images/fasilitas/apar.jpeg'],
                 ['🌬️','Air Suspension','Sistem air suspension memberikan kenyamanan maksimal. Guncangan di jalan diminimalisir untuk perjalanan halus.',
-                 'assets/images/fasilitas/suspensi.jpeg'],
+                 'assets/images/fasilitas/suspensi.jpg'],
             ];
             foreach ($fas as $i => $f): ?>
             <div class="col-lg-4 col-md-6 fade-in" data-delay="<?= $i*50 ?>">
