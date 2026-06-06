@@ -162,12 +162,12 @@ include '../src/includes/header.php';
         <div class="row g-4">
             <?php
             $keung = [
-                ['assets/images/icon/travel.png','Kelayakan Jalan Terjamin','Bus selalu dalam kondisi prima dengan perawatan rutin berkala. Surat kelayakan jalan lengkap dan sesuai peruntukan.'],
-                ['assets/images/icon/air-conditioner.png','AC Dingin Merata','AC berkualitas tinggi memastikan kabin tetap sejuk dan nyaman sepanjang perjalanan, berapapun jumlah penumpang.'],
-                ['assets/images/icon/business.png','Asuransi Perjalanan','Setiap perjalanan dilindungi asuransi (APAR & palu pemecah kaca standar K3). Keselamatan Anda nomor satu.'],
-                ['assets/images/icon/driver.png','Driver & Crew Profesional','Pengemudi berpengalaman, sopan, ramah, dan bertanggung jawab. Siap mengantarkan Anda ke tujuan dengan selamat.'],
-                ['assets/images/icon/hand.png','Harga Ramah di Kantong','Fasilitas premium dengan harga terjangkau dan transparan. Tidak ada biaya tersembunyi dalam setiap penawaran.'],
-                ['assets/images/icon/booking.png','Booking Mudah','Pesan via website atau WhatsApp. Konfirmasi cepat, proses mudah, dan layanan responsif 7 hari seminggu.'],
+                ['../assets/images/icon/travel.png','Kelayakan Jalan Terjamin','Bus selalu dalam kondisi prima dengan perawatan rutin berkala. Surat kelayakan jalan lengkap dan sesuai peruntukan.'],
+                ['../assets/images/icon/air-conditioner.png','AC Dingin Merata','AC berkualitas tinggi memastikan kabin tetap sejuk dan nyaman sepanjang perjalanan, berapapun jumlah penumpang.'],
+                ['../assets/images/icon/business.png','Asuransi Perjalanan','Setiap perjalanan dilindungi asuransi (APAR & palu pemecah kaca standar K3). Keselamatan Anda nomor satu.'],
+                ['../assets/images/icon/driver.png','Driver & Crew Profesional','Pengemudi berpengalaman, sopan, ramah, dan bertanggung jawab. Siap mengantarkan Anda ke tujuan dengan selamat.'],
+                ['../assets/images/icon/hand.png','Harga Ramah di Kantong','Fasilitas premium dengan harga terjangkau dan transparan. Tidak ada biaya tersembunyi dalam setiap penawaran.'],
+                ['../assets/images/icon/booking.png','Booking Mudah','Pesan via website atau WhatsApp. Konfirmasi cepat, proses mudah, dan layanan responsif 7 hari seminggu.'],
             ];
                 foreach ($keung as $i => $k): ?>
                 <div class="col-6 col-md-6 col-lg-4 fade-in" data-delay="<?= $i*60 ?>">
