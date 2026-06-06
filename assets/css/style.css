@@ -136,7 +136,7 @@ img { max-width: 100%; }
 .nav-logo-footer {
     height: 70px;
     filter: brightness(0) invert(1);
-    margin-left: 15px;
+    margin-left: 80px;
     top: 100px;
 
 }
@@ -479,7 +479,6 @@ img { max-width: 100%; }
 .keung-icon {
     width: 68px; height: 68px;
     border-radius: 16px;
-    background: linear-gradient(135deg, var(--merah), var(--merah-tua));
     display: flex; align-items: center; justify-content: center;
     font-size: 1.7rem;
     margin: 0 auto 18px;
@@ -488,7 +487,6 @@ img { max-width: 100%; }
 
 .keung-card:hover .keung-icon {
     transform: scale(1.1) rotate(-5deg);
-    background: linear-gradient(135deg, var(--merah-tua), #500000);
 }
 
 .keung-card h5 {

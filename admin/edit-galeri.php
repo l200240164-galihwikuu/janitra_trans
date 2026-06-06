@@ -113,7 +113,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <option value="interior" <?= $data['kategori']=='interior'?'selected':'' ?>>Interior</option>
                                 <option value="wisata" <?= $data['kategori']=='wisata'?'selected':'' ?>>Wisata</option>
                                 <option value="studytour" <?= $data['kategori']=='studytour'?'selected':'' ?>>Study Tour</option>
-                                <option value="ziarah" <?= $data['kategori']=='ziarah'?'selected':'' ?>>Ziarah</option>
                             </select>
                         </div>
 

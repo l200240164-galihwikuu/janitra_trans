@@ -77,7 +77,6 @@ $total = mysqli_num_rows($query);
                                 <option value="interior">Interior</option>
                                 <option value="wisata">Wisata</option>
                                 <option value="studytour">Study Tour</option>
-                                <option value="ziarah">Ziarah</option>
                             </select>
                         </div>
 
