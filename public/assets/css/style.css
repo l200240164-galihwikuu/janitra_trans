@@ -136,7 +136,7 @@ img { max-width: 100%; }
 .nav-logo-footer {
     height: 70px;
     filter: brightness(0) invert(1);
-    margin-left: 80px;
+    margin-left: 50px;
     top: 100px;
 
 }
