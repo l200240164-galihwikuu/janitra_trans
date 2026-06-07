@@ -46,11 +46,11 @@ include '../src/includes/header.php';
                     <?php
                     $thumbs = [
                         ['assets/images/janitra2bus.jpg','Janitra Surya Trans'],
-                        ['assets/images/janitra_hitam.jpg','Janitra Surya Trans'],
-                        ['assets/images/janitra2.jpg','Janitra Surya Trans'],
+                        ['assets/images/janitra_hitam.jpg','Janitra Surya Trans unit 2'],
+                        ['assets/images/janitra2.jpg','Janitra Surya Trans Unit 1'],
                         ['assets/images/interior.jpg','Interior Kabin'],
-                        ['assets/images/janitra_hitam2.jpg','Janitra Surya Trans'],
-                        ['assets/images/janitra1.jpg','Janitra Surya Trans'],
+                        ['assets/images/janitra_hitam2.jpg','Janitra Surya Trans Unit 2'],
+                        ['assets/images/janitra1.jpg','Janitra Surya Trans Unit 1'],
                     ];
                     foreach ($thumbs as $t): ?>
                     <div style="border-radius:var(--radius-sm);overflow:hidden;cursor:pointer;aspect-ratio:4/3;"
@@ -118,17 +118,17 @@ include '../src/includes/header.php';
         <div class="text-center mb-5">
             <div class="section-label" style="justify-content:center;">Interior Bus</div>
             <h2 class="section-title">Interior <span class="red">Premium</span></h2>
-            <p class="section-subtitle mx-auto">Kursi reclining hitam-merah premium dengan desain sporty dan elegan.</p>
+            <p class="section-subtitle mx-auto">Nikmati perjalanan yang lebih nyaman dengan fasilitas modern dan interior berkelas</p>
         </div>
         <div class="row g-3">
             <?php
             $interior_imgs = [
-                ['assets/images/interior.jpg','Interior Bus',false],
-                ['assets/images/fasilitas/TV.jpg','TV Android',false],
-                ['assets/images/fasilitas/kursi.jpg','Kursi yang lebar % nyaman',false],
-                ['assets/images/fasilitas/ac.jpg','AC & USB Charger',false],
-                ['assets/images/fasilitas/Bagasi_dalam.jpg','Bagasi dalam yang luas',false],
-                ['assets/images/fasilitas/dispenser2.jpg','Dispenser Air & Welcome Drink',false],
+                ['assets/images/interior.jpg','Kursi premium yang nyaman untuk menemani perjalanan Anda.',false],
+                ['assets/images/fasilitas/TV.jpg','Dilengkapi layar hiburan untuk pengalaman perjalanan yang lebih menyenangkan.',false],
+                ['assets/images/fasilitas/kursi.jpg','Jok eksklusif dengan desain sporty dan elegan.',false],
+                ['assets/images/interior_dalam_1.jpg','Kabin luas dan tertata rapi untuk kenyamanan maksimal.',false],
+                ['assets/images/kursi_belakang.jpg','Interior modern dengan tata letak kursi yang ergonomis.',false],
+                ['assets/images/galeri/interior_malam.jpg','Nuansa lampu ambient yang menciptakan suasana perjalanan lebih berkelas.',false],
             ];
             foreach ($interior_imgs as $img): ?>
             <div class="col-<?= $img[2] ? 'md-8' : 'md-4' ?>">
