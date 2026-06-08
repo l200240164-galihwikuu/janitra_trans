@@ -347,20 +347,6 @@ include '../src/includes/header.php';
                 z-index:10;
             ">
 
-                <div style="
-                    display:inline-flex;
-                    align-items:center;
-                    gap:8px;
-                    background:#FEE2E2;
-                    color:#DC2626;
-                    padding:6px 14px;
-                    border-radius:50px;
-                    font-size:.85rem;
-                    font-weight:600;
-                    margin-bottom:18px;
-                ">
-                </div>
-
                 <h4 style="
                     font-weight:800;
                     margin-bottom:18px;
