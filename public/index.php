@@ -359,7 +359,6 @@ include '../src/includes/header.php';
                     font-weight:600;
                     margin-bottom:18px;
                 ">
-                    📍 Lokasi Kantor & Pool
                 </div>
 
                 <h4 style="
