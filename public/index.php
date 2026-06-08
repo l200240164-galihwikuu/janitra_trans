@@ -269,24 +269,24 @@ include '../src/includes/header.php';
         <div class="row g-4">
             <?php
             $fas = [
-                ['❄️','AC Dingin','AC berkualitas tinggi dengan pendinginan merata di seluruh kabin. Tetap segar meski perjalanan jauh.',
+                ['❄️','AC Dingin & Lampu Baca','AC berkualitas tinggi dengan pendinginan merata di seluruh kabin. Serta lampu baca individual untuk kenyamanan membaca tanpa mengganggu penumpang lain.',
                  'assets/images/fasilitas/ac.jpg'],
                 ['🛏️','Bantal & Selimut','Setiap penumpang mendapat bantal dan selimut untuk kenyamanan istirahat selama perjalanan panjang.',
                  'assets/images/fasilitas/bantal.jpeg'],
                 ['💧','Dispenser & Welcome Drink','Tersedia dispenser air minum dan welcome drink untuk menyambut penumpang di awal perjalanan.',
-                 'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=70'],
+                 'assets/images/fasilitas/dispenser.jpg'],
                 ['📺','Android TV & Mic Wireless','Android TV layar besar dengan mic wireless untuk hiburan, karaoke, dan presentasi selama perjalanan.',
-                 'https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=400&q=70'],
+                 'assets/images/fasilitas/tv.jpeg'],
                 ['🔌','USB Charger Setiap Kursi','Port USB charger tersedia di setiap kursi. Smartphone dan gadget Anda selalu siap digunakan.',
-                 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=70'],
-                ['💡','Lampu Baca & Tirai','Lampu baca individual dan tirai jendela untuk privasi dan kenyamanan membaca tanpa mengganggu penumpang lain.',
-                 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&q=70'],
+                 'assets/images/fasilitas/usb.jpeg'],
                 ['🧳','Bagasi Dalam','Ruang bagasi dalam bus, cukup untuk koper dan barang bawaan seluruh rombongan.',
                  'assets/images/fasilitas/Bagasi_dalam.jpg'],
                 ['🛡️','APAR & Palu Pemecah Kaca','Standar K3 terpenuhi: APAR dan palu pemecah kaca tersedia di setiap bus untuk keselamatan penumpang.',
                  'assets/images/fasilitas/apar.jpeg'],
                 ['🌬️','Air Suspension','Sistem air suspension memberikan kenyamanan maksimal. Guncangan di jalan diminimalisir untuk perjalanan halus.',
                  'assets/images/fasilitas/suspensi.jpg'],
+                ['💺','Leg Rest','Kursi dapat direbahkan hingga posisi selonjoran untuk kenyamanan maksimal selama perjalanan jauh.',
+                 'assets/images/fasilitas/legrest.jpeg'],
             ];
             foreach ($fas as $i => $f): ?>
             <div class="col-lg-4 col-md-6 fade-in" data-delay="<?= $i*50 ?>">
