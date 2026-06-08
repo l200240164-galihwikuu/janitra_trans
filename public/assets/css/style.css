@@ -1402,3 +1402,13 @@ SMALL PHONE (EXTRA FIX)
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
+
+@media (max-width: 768px){
+    .lokasi-card{
+        position:relative !important;
+        top:auto !important;
+        left:auto !important;
+        max-width:100% !important;
+        margin:15px;
+    }
+}

@@ -306,6 +306,119 @@ include '../src/includes/header.php';
     </div>
 </section>
 
+<!-- ═══ LOKASI KAMI ═══════════════════════════════════ -->
+<section style="padding:90px 0;background:#fff;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <div class="section-label" style="justify-content:center;">Lokasi Kami</div>
+            <h2 class="section-title">Kantor & Pool <span class="red">Janitra Surya Trans</span></h2>
+            <p class="section-subtitle mx-auto">
+                Kunjungi kantor kami atau hubungi tim kami untuk konsultasi perjalanan dan reservasi armada.
+            </p>
+        </div>
+
+        <div style="
+            position:relative;
+            overflow:hidden;
+            border-radius:24px;
+            box-shadow:0 25px 60px rgba(0,0,0,.12);
+        ">
+
+            <!-- Google Maps -->
+            <iframe
+                src="https://maps.google.com/maps?q=-7.9244014,112.692255&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="520"
+                style="border:0;display:block;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+
+            <!-- Floating Card -->
+            <div class="lokasi-card" style="
+                position:absolute;
+                top:30px;
+                left:30px;
+                max-width:380px;
+                background:#fff;
+                border-radius:20px;
+                padding:28px;
+                box-shadow:0 15px 40px rgba(0,0,0,.15);
+                z-index:10;
+            ">
+
+                <div style="
+                    display:inline-flex;
+                    align-items:center;
+                    gap:8px;
+                    background:#FEE2E2;
+                    color:#DC2626;
+                    padding:6px 14px;
+                    border-radius:50px;
+                    font-size:.85rem;
+                    font-weight:600;
+                    margin-bottom:18px;
+                ">
+                    📍 Lokasi Kantor & Pool
+                </div>
+
+                <h4 style="
+                    font-weight:800;
+                    margin-bottom:18px;
+                    color:#111827;
+                ">
+                    PT Janitra Surya Trans
+                </h4>
+
+                <div style="display:flex;gap:12px;margin-bottom:18px;">
+                    <i class="fas fa-map-marker-alt"
+                       style="color:#DC2626;font-size:1.1rem;margin-top:4px;"></i>
+                    <span style="color:#4B5563;line-height:1.7;">
+                        Jl. Boro Terong Dowo No.29,
+                        Ulesari, Tirtomoyo,
+                        Kec. Pakis,
+                        Kabupaten Malang,
+                        Jawa Timur 65154
+                    </span>
+                </div>
+
+                <div style="display:flex;gap:12px;margin-bottom:18px;">
+                    <i class="fas fa-phone"
+                       style="color:#DC2626;"></i>
+                    <span>0812-3362-4797</span>
+                </div>
+
+                <div style="display:flex;gap:12px;margin-bottom:25px;">
+                    <i class="fas fa-clock"
+                       style="color:#DC2626;"></i>
+                    <span>Senin - Minggu • 24 Jam</span>
+                </div>
+
+                <div style="
+                    display:flex;
+                    gap:10px;
+                    flex-wrap:wrap;
+                ">
+                    <a href="https://wa.me/6281233624797"
+                       target="_blank"
+                       class="btn-merah-putih">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+
+                    <a href="https://www.google.com/maps/place/Jl.+Boro+Terong+Dowo+No.29,+Ulesari,+Tirtomoyo,+Kec.+Pakis,+Kabupaten+Malang,+Jawa+Timur+65154/"
+                       target="_blank"
+                       class="btn-outline-merah">
+                        <i class="fas fa-directions"></i>
+                        Maps
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <!-- ═══ CTA ════════════════════════════════════════════ -->
 <section class="cta-section">
     <div style="position:absolute;inset:0;">
