@@ -53,6 +53,22 @@ $total = mysqli_num_rows($query);
         </div>
 
         <div class="admin-content">
+            <?php if(isset($_SESSION['success'])): ?>
+            <div class="alert-auto"
+                style="background:linear-gradient(135deg,#D1FAE5,#A7F3D0);
+                        border-left:5px solid #10B981;
+                        border-radius:var(--radius-sm);
+                        padding:18px 20px;
+                        margin-bottom:20px;
+                        display:flex;
+                        gap:12px;
+                        align-items:center;">
+                <div style="font-size:1.3rem;">✅</div>
+                <div style="font-weight:700;color:#065F46;">
+                    <?= $_SESSION['success']; ?>
+                </div>
+            </div>
+            <?php unset($_SESSION['success']); endif; ?>
 
             <!-- FORM UPLOAD (STYLE SAMA CARD BOOKING) -->
             <div style="background:white;border-radius:var(--radius);padding:20px 22px;box-shadow:var(--shadow-card);margin-bottom:20px;border-top:4px solid var(--merah);">
@@ -166,6 +182,17 @@ $total = mysqli_num_rows($query);
         </div>
     </div>
 </div>
+<script>
+document.querySelectorAll('.alert-auto').forEach(function(a){
+    setTimeout(function(){
+        a.style.opacity='0';
+        a.style.transform='translateY(-10px)';
+        setTimeout(function(){
+            a.remove();
+        },500);
+    },4000);
+});
+</script>
 <script>
 function toggleSidebar(){
     const sidebar = document.querySelector('.admin-sidebar');
