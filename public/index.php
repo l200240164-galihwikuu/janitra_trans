@@ -285,7 +285,7 @@ include '../src/includes/header.php';
                  'assets/images/fasilitas/apar.jpeg'],
                 ['🌬️','Air Suspension','Sistem air suspension memberikan kenyamanan maksimal. Guncangan di jalan diminimalisir untuk perjalanan halus.',
                  'assets/images/fasilitas/suspensi.jpg'],
-                ['💺','Leg Rest','Kursi dapat direbahkan hingga posisi selonjoran untuk kenyamanan maksimal selama perjalanan jauh.',
+                ['💺','Leg Rest','Kursi dapat direbahkan hingga posisi selonjor untuk kenyamanan maksimal selama perjalanan jauh.',
                  'assets/images/fasilitas/legrest.jpeg'],
             ];
             foreach ($fas as $i => $f): ?>
