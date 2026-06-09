@@ -28,9 +28,9 @@ include '../src/includes/header.php';
             <div class="col-lg-7 fade-in">
                 <!-- Foto utama -->
                 <div style="border-radius:var(--radius);overflow:hidden;margin-bottom:12px;position:relative;cursor:pointer;"
-                    onclick="openLightbox('assets/images/janitra_utama.jpg','Bus Janitra Surya - Bus premium dengan fasilitas lengkap')">
+                    onclick="openLightbox('assets/images/janitra99.jpg','Bus Janitra Surya - Bus premium dengan fasilitas lengkap')">
                     <img id="mainBusImg"
-                        src="assets/images/janitra_utama.jpg"
+                        src="assets/images/janitra99.jpg"
                         alt="Jetbus 3++ SHD Janitra Surya"
                         style="width:100%;height:380px;object-fit:cover;display:block;transition:transform 0.4s ease;">
                     <div style="position:absolute;top:14px;left:14px;background:var(--merah);color:white;padding:6px 16px;border-radius:4px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.72rem;text-transform:uppercase;letter-spacing:1px;">
@@ -47,10 +47,10 @@ include '../src/includes/header.php';
                     $thumbs = [
                         ['assets/images/janitra2bus.jpg','Janitra Surya Trans'],
                         ['assets/images/janitra_hitam2.jpg','Janitra Surya Trans unit 2'],
-                        ['assets/images/janitra_merah2.jpg','Janitra Surya Trans Unit 1'],
+                        ['assets/images/janitra1.jpg','Janitra Surya Trans Unit 1'],
                         ['assets/images/interior.jpg','Interior Kabin'],
-                        ['assets/images/janitra_hitam1.jpg','Janitra Surya Trans Unit 2'],
-                        ['assets/images/janitra_merah1.jpg','Janitra Surya Trans Unit 1'],
+                        ['assets/images/janitra_hitam.jpg','Janitra Surya Trans Unit 2'],
+                        ['assets/images/janitra2.jpg','Janitra Surya Trans Unit 1'],
                     ];
                     foreach ($thumbs as $t): ?>
                     <div style="border-radius:var(--radius-sm);overflow:hidden;cursor:pointer;aspect-ratio:4/3;"
