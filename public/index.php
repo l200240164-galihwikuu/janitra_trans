@@ -93,36 +93,61 @@ include '../src/includes/header.php';
 
                 <!-- 3 keunggulan utama (persis dari proposal hal.2) -->
                 <div class="row g-3">
-
                     <div class="col-4 col-md-4 fade-in">
-                        <div style="background:var(--abu);border-radius:var(--radius-sm);padding:20px;text-align:center;border-top:3px solid var(--merah); height:100%;align-items:justify;">
+                        <div class="feature-card" style="background:var(--abu);border-radius:var(--radius-sm);padding:20px;text-align:center;border-top:3px solid var(--merah); height:100%;align-items:justify;">
                             <div style="margin-bottom:8px;">
                                 <img src="assets/images/icon/travel.png" alt="Kelayakan Jalan" style="width:40px;height:40px;" />
                             </div>
-                            <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--hitam);margin-bottom:6px;">Kelayakan Jalan</div>
-                            <p style="font-size:0.78rem;color:var(--abu-teks);margin:0;line-height:1.6;">Bus selalu dalam kondisi prima dengan perawatan rutin berkala.</p>
+                            <div class="judul-fitur"
+                                style="font-family:'Montserrat',sans-serif;
+                                        font-weight:800;
+                                        font-size:0.78rem;
+                                        text-transform:uppercase;
+                                        letter-spacing:0.5px;
+                                        color:var(--hitam);
+                                        margin-bottom:6px;">
+                                Kelayakan Jalan
+                                </div>
+                            <p class="fitur-desc"style="font-size:0.78rem;color:var(--abu-teks);margin:0;line-height:1.6;">Bus selalu dalam kondisi prima dengan perawatan rutin berkala.</p>
                         </div>
                     </div>
                     <div class="col-4 col-md-4 fade-in" data-delay="80">
-                        <div style="background:var(--abu);border-radius:var(--radius-sm);padding:20px;text-align:center;border-top:3px solid var(--merah); height:100%;align-items: justify;">
+                        <div class="feature-card" style="background:var(--abu);border-radius:var(--radius-sm);padding:20px;text-align:center;border-top:3px solid var(--merah); height:100%;align-items: justify;">
                             <div style="margin-bottom:8px;">
                                 <img src="assets/images/icon/money-bag.png" alt="Ramah Kantong" style="width:40px;height:40px;" />
                             </div>
-                            <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--hitam);margin-bottom:6px;">Ramah Kantong</div>
-                            <p style="font-size:0.78rem;color:var(--abu-teks);margin:0;line-height:1.6;">Harga terjangkau dengan fasilitas lengkap dan pelayanan prima.</p>
+                            <div class="judul-fitur"
+                                style="font-family:'Montserrat',sans-serif;
+                                        font-weight:800;
+                                        font-size:0.78rem;
+                                        text-transform:uppercase;
+                                        letter-spacing:0.5px;
+                                        color:var(--hitam);
+                                        margin-bottom:6px;">
+                                Ramah Kantong
+                            </div>
+                            <p class="fitur-desc" style="font-size:0.78rem;color:var(--abu-teks);margin:0;line-height:1.6;">Harga terjangkau dengan fasilitas lengkap dan pelayanan prima.</p>
                         </div>
                     </div>
                     <div class="col-4 col-md-4 fade-in" data-delay="160">
-                        <div style="background:var(--abu);border-radius:var(--radius-sm);padding:20px;text-align:center;border-top:3px solid var(--merah); height:100%;align-items: justify;">
+                        <div class="feature-card" style="background:var(--abu);border-radius:var(--radius-sm);padding:20px;text-align:center;border-top:3px solid var(--merah); height:100%;align-items: justify;">
                             <div style="margin-bottom:8px;">
                                 <img src="assets/images/icon/steward.png" alt="Crew Profesional" style="width:40px;height:40px;" />
                             </div>
-                            <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--hitam);margin-bottom:6px;">Crew Profesional</div>
-                            <p style="font-size:0.78rem;color:var(--abu-teks);margin:0;line-height:1.6;">Crew ramah, sopan, berpengalaman & bertanggung jawab.</p>
+                            <div class="judul-fitur"
+                                style="font-family:'Montserrat',sans-serif;
+                                        font-weight:800;
+                                        font-size:0.78rem;
+                                        text-transform:uppercase;
+                                        letter-spacing:0.5px;
+                                        color:var(--hitam);
+                                        margin-bottom:6px;">
+                                Crew Profesional
+                            </div>
+                            <p class="fitur-desc" style="font-size:0.78rem;color:var(--abu-teks);margin:0;line-height:1.6;">Crew ramah, sopan, berpengalaman & bertanggung jawab.</p>
                         </div>
                     </div>
                 </div>
-            </div>
 
             <!-- Foto bus tampak depan/samping dari proposal -->
             <div class="col-lg-6 fade-in">
