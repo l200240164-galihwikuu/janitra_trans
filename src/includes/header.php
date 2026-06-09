@@ -21,17 +21,21 @@ $wa_number = '6281233624797';
 <!-- TOP BAR -->
 <div class="navbar-topbar">
     <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-            <div>
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <div class="topbar-left">
                 <i class="fas fa-phone me-1"></i>
                 <a href="tel:+6281233624797">0812-3362-4797</a>
                 &nbsp;|&nbsp;
                 <i class="fas fa-map-marker-alt me-1"></i>
-                <a href="https://www.google.com/maps/place/Jl.+Boro+Terong+Dowo+No.29,+Ulesari,+Tirtomoyo,+Kec.+Pakis,+Kabupaten+Malang,+Jawa+Timur+65154/@-7.9244014,112.6896801,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd6295d9aefc995:0x6d43802d51063c3!8m2!3d-7.9244014!4d112.692255!16s%2Fg%2F11wb1hq619?entry=ttu&g_ep=EgoyMDI2MDUzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Jl. Boro Terong Dowo No.29, Tirtomoyo Pakis, Kab. Malang</a>
+                <a href="https://www.google.com/maps/place/Jl.+Boro+Terong+Dowo+No.29,+Ulesari,+Tirtomoyo,+Kec.+Pakis,+Kabupaten+Malang,+Jawa+Timur+65154/"
+                    target="_blank">
+                    Jl. Boro Terong Dowo No.29, Tirtomoyo Pakis, Kab. Malang
+                </a>
             </div>
-            <div>
+            <div class="topbar-right">
                 <a href="https://www.sewabusmalang.com/" target="_blank">
-                    <i class="fas fa-globe me-1"></i>sewabusmalang.com
+                    <i class="fas fa-globe me-1"></i>
+                    sewabusmalang.com
                 </a>
             </div>
         </div>

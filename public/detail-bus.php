@@ -28,9 +28,9 @@ include '../src/includes/header.php';
             <div class="col-lg-7 fade-in">
                 <!-- Foto utama -->
                 <div style="border-radius:var(--radius);overflow:hidden;margin-bottom:12px;position:relative;cursor:pointer;"
-                    onclick="openLightbox('assets/images/janitra99.jpg','Bus Janitra Surya - Bus premium dengan fasilitas lengkap')">
+                    onclick="openLightbox('assets/images/janitra_utama.jpg','Bus Janitra Surya - Bus premium dengan fasilitas lengkap')">
                     <img id="mainBusImg"
-                        src="assets/images/janitra99.jpg"
+                        src="assets/images/janitra_utama.jpg"
                         alt="Jetbus 3++ SHD Janitra Surya"
                         style="width:100%;height:380px;object-fit:cover;display:block;transition:transform 0.4s ease;">
                     <div style="position:absolute;top:14px;left:14px;background:var(--merah);color:white;padding:6px 16px;border-radius:4px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.72rem;text-transform:uppercase;letter-spacing:1px;">
@@ -46,11 +46,11 @@ include '../src/includes/header.php';
                     <?php
                     $thumbs = [
                         ['assets/images/janitra2bus.jpg','Janitra Surya Trans'],
-                        ['assets/images/janitra_hitam.jpg','Janitra Surya Trans unit 2'],
-                        ['assets/images/janitra2.jpg','Janitra Surya Trans Unit 1'],
+                        ['assets/images/janitra_hitam2.jpg','Janitra Surya Trans unit 2'],
+                        ['assets/images/janitra_merah2.jpg','Janitra Surya Trans Unit 1'],
                         ['assets/images/interior.jpg','Interior Kabin'],
-                        ['assets/images/janitra_hitam2.jpg','Janitra Surya Trans Unit 2'],
-                        ['assets/images/janitra1.jpg','Janitra Surya Trans Unit 1'],
+                        ['assets/images/janitra_hitam1.jpg','Janitra Surya Trans Unit 2'],
+                        ['assets/images/janitra_merah1.jpg','Janitra Surya Trans Unit 1'],
                     ];
                     foreach ($thumbs as $t): ?>
                     <div style="border-radius:var(--radius-sm);overflow:hidden;cursor:pointer;aspect-ratio:4/3;"
@@ -126,9 +126,9 @@ include '../src/includes/header.php';
                 ['assets/images/interior.jpg','Kursi premium yang nyaman untuk menemani perjalanan Anda.',false],
                 ['assets/images/fasilitas/tv.jpeg','Dilengkapi layar hiburan untuk pengalaman perjalanan yang lebih menyenangkan.',false],
                 ['assets/images/fasilitas/kursi.jpg','Jok eksklusif dengan desain sporty dan elegan.',false],
-                ['assets/images/interior_dalam_1.jpg','Kabin luas dan tertata rapi untuk kenyamanan maksimal.',false],
+                ['assets/images/fasilitas/bantal.jpeg','Kabin luas dan tertata rapi untuk kenyamanan maksimal.',false],
                 ['assets/images/kursi_belakang.jpg','Interior modern dengan tata letak kursi yang ergonomis.',false],
-                ['assets/images/galeri/interior_malam.jpg','Nuansa lampu ambient yang menciptakan suasana perjalanan lebih berkelas.',false],
+                ['assets/images/interior_malam2.jpg','Nuansa lampu ambient yang menciptakan suasana perjalanan lebih berkelas.',false],
             ];
             foreach ($interior_imgs as $img): ?>
             <div class="col-<?= $img[2] ? 'md-8' : 'md-4' ?>">
@@ -156,22 +156,24 @@ include '../src/includes/header.php';
         <div class="row g-4">
             <?php
             $fasilitas_detail = [
-                ['❄️','AC Dingin','AC berkualitas tinggi untuk kenyamanan penumpang di seluruh kabin.','#EF5350'],
-                ['🛏️','Bantal & Selimut','Setiap penumpang mendapat bantal dan selimut untuk istirahat nyaman.','#E53935'],
-                ['💧','Dispenser & Welcome Drink','Air minum tersedia dan welcome drink di awal perjalanan.','#C62828'],
-                ['📺','Android TV','Layar Android TV besar untuk hiburan selama perjalanan.','#B71C1C'],
-                ['🎤','Mic Wireless','Mic wireless untuk karaoke, presentasi, atau announcer.','#EF5350'],
-                ['🔌','USB Charger Tiap Kursi','Port USB di setiap kursi agar gadget Anda selalu penuh baterai.','#E53935'],
-                ['🧳','Bagasi Luas','Ruang bagasi bawah yang sangat besar untuk seluruh rombongan.','#B71C1C'],
-                ['🛡️','APAR & Palu Kaca (K3)','Standar keselamatan K3 terpenuhi di setiap perjalanan.','#EF5350'],
-                ['🌬️','Air Suspension System','Suspensi udara untuk perjalanan mulus meski jalan tidak rata.','#E53935'],
+                ['assets/images/icon/air-conditioner.png','AC Dingin','AC berkualitas tinggi untuk kenyamanan penumpang di seluruh kabin.'],
+                ['assets/images/icon/bantall.png','Bantal & Selimut','Setiap penumpang mendapat bantal dan selimut untuk istirahat nyaman.'],
+                ['assets/images/icon/galon.png','Dispenser & Welcome Drink','Air minum tersedia dan welcome drink di awal perjalanan.'],
+                ['assets/images/icon/TV.png','Android TV','Layar Android TV besar untuk hiburan selama perjalanan.'],
+                ['assets/images/icon/music.png','Mic Wireless','Mic wireless untuk karaoke, presentasi, atau announcer.'],
+                ['assets/images/icon/usb.png','USB Charger Tiap Kursi','Port USB di setiap kursi agar gadget Anda selalu penuh baterai.'],
+                ['assets/images/icon/bagasii.png','Bagasi Luas','Ruang bagasi bawah yang sangat besar untuk seluruh rombongan.'],
+                ['assets/images/icon/apar.png','APAR & Palu Kaca (K3)','Standar keselamatan K3 terpenuhi di setiap perjalanan.'],
+                ['assets/images/icon/suspension.png','Air Suspension System','Suspensi udara untuk perjalanan mulus meski jalan tidak rata.'],
             ];
             foreach ($fasilitas_detail as $i => $f): ?>
             <div class="col-6 col-lg-4 col-md-4 fade-in" data-delay="<?= $i*50 ?>">
-                <div class="fasilitas-item" style="background:var(--abu);border-radius:var(--radius-sm);padding:22px;display:flex;align-items:flex-start;gap:14px;border-left:4px solid <?= $f[3] ?>;transition:var(--transition);"
-                    onmouseover="this.style.background='white';this.style.boxShadow='var(--shadow-card)'"
+                <div class="fasilitas-item" style="background:var(--abu);border-radius:var(--radius-sm);border-top:5px solid #ff0000;padding:22px;display:flex;align-items:flex-start;gap:14px;transition:var(--transition);"
+                    onmouseover="this.style.background='white';this.style.boxShadow='0 10px 25px rgba(173, 52, 64, 0.3)'"
                     onmouseout="this.style.background='var(--abu)';this.style.boxShadow='none'">
-                    <div style="width:44px;height:44px;background:<?= $f[3] ?>;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;"><?= $f[0] ?></div>
+                    <div style="width:44px;height:44px;flex-shrink:0;display:flex;align-items:center;justify-content:center;">
+                        <img src="<?= $f[0] ?>" alt="<?= $f[1] ?>" style="width:100%;height:100%;object-fit:contain;">
+                    </div>
                     <div>
                         <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.85rem;text-transform:uppercase;color:var(--hitam);margin-bottom:5px;"><?= $f[1] ?></div>
                         <p style="font-size:0.82rem;color:var(--abu-teks);line-height:1.65;margin:0;"><?= $f[2] ?></p>
