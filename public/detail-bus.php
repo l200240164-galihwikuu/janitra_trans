@@ -124,7 +124,7 @@ include '../src/includes/header.php';
             <?php
             $interior_imgs = [
                 ['assets/images/interior.jpg','Kursi premium yang nyaman untuk menemani perjalanan Anda.',false],
-                ['assets/images/fasilitas/TV.jpg','Dilengkapi layar hiburan untuk pengalaman perjalanan yang lebih menyenangkan.',false],
+                ['assets/images/fasilitas/tv.jpeg','Dilengkapi layar hiburan untuk pengalaman perjalanan yang lebih menyenangkan.',false],
                 ['assets/images/fasilitas/kursi.jpg','Jok eksklusif dengan desain sporty dan elegan.',false],
                 ['assets/images/fasilitas/bantal.jpeg','Kabin luas dan tertata rapi untuk kenyamanan maksimal.',false],
                 ['assets/images/kursi_belakang.jpg','Interior modern dengan tata letak kursi yang ergonomis.',false],

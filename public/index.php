@@ -87,7 +87,7 @@ include '../src/includes/header.php';
                     dengan armada terbaik serta Driver & Crew yang berpengalaman, ramah, sopan & profesional di bidang transportasi.
                 </p>
                 <p style="color:var(--abu-teks);line-height:1.85;margin-bottom:28px;font-size:0.97rem; text-align: justify;">
-                    Kami siap melayani study tour, study kampus, ziarah Wali, wisata keluarga, gathering perusahaan, serta perjalanan wisata lainnya.
+                    Kami siap melayani study tour, study kampus, wisata keluarga, gathering perusahaan, serta perjalanan wisata lainnya.
                     Percayakan perjalanan Anda bersama <strong style="color:var(--merah);">PT Janitra Surya Trans</strong>.
                 </p>
 
@@ -269,24 +269,24 @@ include '../src/includes/header.php';
         <div class="row g-4">
             <?php
             $fas = [
-                ['❄️','AC Dingin','AC berkualitas tinggi dengan pendinginan merata di seluruh kabin. Tetap segar meski perjalanan jauh.',
+                ['❄️','AC Dingin & Lampu Baca','AC berkualitas tinggi dengan pendinginan merata di seluruh kabin. Serta lampu baca individual untuk kenyamanan membaca tanpa mengganggu penumpang lain.',
                  'assets/images/fasilitas/ac.jpg'],
                 ['🛏️','Bantal & Selimut','Setiap penumpang mendapat bantal dan selimut untuk kenyamanan istirahat selama perjalanan panjang.',
                  'assets/images/fasilitas/bantal.jpeg'],
                 ['💧','Dispenser & Welcome Drink','Tersedia dispenser air minum dan welcome drink untuk menyambut penumpang di awal perjalanan.',
-                 'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=70'],
+                 'assets/images/fasilitas/dispenser.jpg'],
                 ['📺','Android TV & Mic Wireless','Android TV layar besar dengan mic wireless untuk hiburan, karaoke, dan presentasi selama perjalanan.',
-                 'https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=400&q=70'],
+                 'assets/images/fasilitas/tv.jpeg'],
                 ['🔌','USB Charger Setiap Kursi','Port USB charger tersedia di setiap kursi. Smartphone dan gadget Anda selalu siap digunakan.',
-                 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=70'],
-                ['💡','Lampu Baca & Tirai','Lampu baca individual dan tirai jendela untuk privasi dan kenyamanan membaca tanpa mengganggu penumpang lain.',
-                 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&q=70'],
+                 'assets/images/fasilitas/usb.jpeg'],
                 ['🧳','Bagasi Dalam','Ruang bagasi dalam bus, cukup untuk koper dan barang bawaan seluruh rombongan.',
                  'assets/images/fasilitas/Bagasi_dalam.jpg'],
                 ['🛡️','APAR & Palu Pemecah Kaca','Standar K3 terpenuhi: APAR dan palu pemecah kaca tersedia di setiap bus untuk keselamatan penumpang.',
                  'assets/images/fasilitas/apar.jpeg'],
                 ['🌬️','Air Suspension','Sistem air suspension memberikan kenyamanan maksimal. Guncangan di jalan diminimalisir untuk perjalanan halus.',
                  'assets/images/fasilitas/suspensi.jpg'],
+                ['💺','Leg Rest','Kursi dapat direbahkan hingga posisi selonjor untuk kenyamanan maksimal selama perjalanan jauh.',
+                 'assets/images/fasilitas/legrest.jpeg'],
             ];
             foreach ($fas as $i => $f): ?>
             <div class="col-lg-4 col-md-6 fade-in" data-delay="<?= $i*50 ?>">
@@ -302,6 +302,104 @@ include '../src/includes/header.php';
                 </div>
             </div>
             <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ LOKASI KAMI ═══════════════════════════════════ -->
+<section style="padding:90px 0;background:#fff;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <div class="section-label" style="justify-content:center;">Lokasi Kami</div>
+            <h2 class="section-title">Kantor & Pool <span class="red">Janitra Surya Trans</span></h2>
+            <p class="section-subtitle mx-auto">
+                Kunjungi kantor kami atau hubungi tim kami untuk konsultasi perjalanan dan reservasi armada.
+            </p>
+        </div>
+
+        <div style="
+            position:relative;
+            overflow:hidden;
+            border-radius:24px;
+            box-shadow:0 25px 60px rgba(0,0,0,.12);
+        ">
+
+            <!-- Google Maps -->
+            <iframe
+                src="https://maps.google.com/maps?q=-7.9244014,112.692255&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="520"
+                style="border:0;display:block;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+
+            <!-- Floating Card -->
+            <div class="lokasi-card" style="
+                position:absolute;
+                top:30px;
+                left:30px;
+                max-width:380px;
+                background:#fff;
+                border-radius:20px;
+                padding:28px;
+                box-shadow:0 15px 40px rgba(0,0,0,.15);
+                z-index:10;
+            ">
+
+                <h4 style="
+                    font-weight:800;
+                    margin-bottom:18px;
+                    color:#111827;
+                ">
+                    PT Janitra Surya Trans
+                </h4>
+
+                <div style="display:flex;gap:12px;margin-bottom:18px;">
+                    <i class="fas fa-map-marker-alt"
+                       style="color:#DC2626;font-size:1.1rem;margin-top:4px;"></i>
+                    <span style="color:#4B5563;line-height:1.7;">
+                        Jl. Boro Terong Dowo No.29,
+                        Ulesari, Tirtomoyo,
+                        Kec. Pakis,
+                        Kabupaten Malang,
+                        Jawa Timur 65154
+                    </span>
+                </div>
+
+                <div style="display:flex;gap:12px;margin-bottom:18px;">
+                    <i class="fas fa-phone"
+                       style="color:#DC2626;"></i>
+                    <span>0812-3362-4797</span>
+                </div>
+
+                <div style="display:flex;gap:12px;margin-bottom:25px;">
+                    <i class="fas fa-clock"
+                       style="color:#DC2626;"></i>
+                    <span>Senin - Minggu • 24 Jam</span>
+                </div>
+
+                <div style="
+                    display:flex;
+                    gap:10px;
+                    flex-wrap:wrap;
+                ">
+                    <a href="https://wa.me/6281233624797"
+                       target="_blank"
+                       class="btn-merah-putih">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+
+                    <a href="https://www.google.com/maps/place/Jl.+Boro+Terong+Dowo+No.29,+Ulesari,+Tirtomoyo,+Kec.+Pakis,+Kabupaten+Malang,+Jawa+Timur+65154/"
+                       target="_blank"
+                       class="btn-outline-merah">
+                        <i class="fas fa-directions"></i>
+                        Maps
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>

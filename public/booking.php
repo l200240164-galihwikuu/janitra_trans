@@ -12,7 +12,9 @@ $pesan_error  = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nama             = trim(mysqli_real_escape_string($conn, $_POST['nama'] ?? ''));
-    $no_hp            = trim(mysqli_real_escape_string($conn, $_POST['no_hp'] ?? ''));
+    $no_hp = preg_replace('/[^0-9]/', '', $_POST['no_hp'] ?? '');
+    $no_hp = '62' . ltrim($no_hp, '0');
+    $no_hp = mysqli_real_escape_string($conn, $no_hp);
     $tanggal          = mysqli_real_escape_string($conn, $_POST['tanggal'] ?? '');
     $tujuan           = trim(mysqli_real_escape_string($conn, $_POST['tujuan'] ?? ''));
     $jumlah_penumpang = intval($_POST['jumlah_penumpang'] ?? 0);
@@ -23,7 +25,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($no_hp))  $errors[] = 'Nomor HP tidak boleh kosong.';
     if (empty($tanggal))$errors[] = 'Tanggal keberangkatan wajib diisi.';
     if (empty($tujuan)) $errors[] = 'Tujuan perjalanan wajib diisi.';
-    if ($jumlah_penumpang < 1 || $jumlah_penumpang > 50) $errors[] = 'Jumlah penumpang harus 1–50 orang.';
+    if ($jumlah_penumpang < 1)
+    $errors[] = 'Jumlah penumpang minimal 1 orang.';
     if (!empty($tanggal) && strtotime($tanggal) < strtotime(date('Y-m-d'))) $errors[] = 'Tanggal tidak boleh di masa lalu.';
 
     if (empty($errors)) {
@@ -106,10 +109,22 @@ include '../src/includes/header.php';
 
                             <!-- No HP -->
                             <div class="col-md-6">
-                                <label class="form-label"><i class="fab fa-whatsapp me-1" style="color:var(--merah);"></i> No. HP / WhatsApp *</label>
-                                <input type="tel" class="form-control" id="no_hp" name="no_hp"
-                                       placeholder="Contoh: 081233624797"
-                                       value="<?= htmlspecialchars($_POST['no_hp'] ?? '') ?>" required>
+                                <label class="form-label">
+                                    <i class="fab fa-whatsapp me-1" style="color:var(--merah);"></i>
+                                    No. HP / WhatsApp *
+                                </label>
+
+                                <div class="input-group">
+                                    <span class="input-group-text">+62</span>
+                                    <input type="tel"
+                                        class="form-control"
+                                        id="no_hp"
+                                        name="no_hp"
+                                        placeholder="81233624797"
+                                        value="<?= htmlspecialchars($_POST['no_hp'] ?? '') ?>"
+                                        required>
+                                </div>
+
                                 <div class="invalid-feedback">Masukkan nomor HP yang valid.</div>
                             </div>
 
@@ -125,10 +140,10 @@ include '../src/includes/header.php';
                             <div class="col-md-6">
                                 <label class="form-label"><i class="fas fa-users me-1" style="color:var(--merah);"></i> Jumlah Penumpang *</label>
                                 <input type="number" class="form-control" id="jumlah_penumpang" name="jumlah_penumpang"
-                                       placeholder="Maks. 50 orang" min="1" max="50"
-                                       value="<?= htmlspecialchars($_POST['jumlah_penumpang'] ?? '') ?>" required>
+                                    placeholder="Masukkan jumlah penumpang" min="1"
+                                    value="<?= htmlspecialchars($_POST['jumlah_penumpang'] ?? '') ?>" required>
                                 <div class="form-text" style="font-size:0.77rem;">Kapasitas bus: 50 kursi (konfigurasi 2-2)</div>
-                                <div class="invalid-feedback">Jumlah penumpang 1–50 orang.</div>
+                                <div class="invalid-feedback">Jumlah penumpang minimal 1 orang.</div>
                             </div>
 
                             <!-- Tujuan -->

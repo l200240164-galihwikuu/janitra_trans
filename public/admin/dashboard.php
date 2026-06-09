@@ -123,8 +123,13 @@ $booking_terbaru = mysqli_query($conn, "SELECT * FROM booking ORDER BY created_a
                                 <td style="padding:13px 16px;font-size:0.85rem;font-weight:700;color:var(--hitam);">
                                     <?= htmlspecialchars($row['nama']) ?>
                                 </td>
-                                <td style="padding:13px 16px;font-size:0.82rem;color:var(--abu-teks);">
-                                    <?= htmlspecialchars($row['no_hp']) ?>
+                                <td style="padding:13px 16px;font-size:0.82rem;">
+                                    <a href="https://wa.me/<?= preg_replace('/[^0-9]/', '', $row['no_hp']) ?>"
+                                    target="_blank"
+                                    style="color:#25D366;text-decoration:none;font-weight:700;">
+                                        <i class="fab fa-whatsapp me-1"></i>
+                                        <?= htmlspecialchars($row['no_hp']) ?>
+                                    </a>
                                 </td>
                                 <td style="padding:13px 16px;font-size:0.82rem;color:var(--abu-teks);white-space:nowrap;">
                                     <?= date('d M Y', strtotime($row['tanggal'])) ?>

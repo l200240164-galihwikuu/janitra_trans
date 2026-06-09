@@ -57,15 +57,23 @@ document.addEventListener('DOMContentLoaded', function () {
                 if(!f.value.trim()){ f.classList.add('is-invalid'); valid=false; }
             });
             const hp = document.getElementById('no_hp');
-            if(hp && hp.value && !/^[0-9+\-\s]{8,15}$/.test(hp.value)){
-                hp.classList.add('is-invalid'); valid=false;
+            if(hp && hp.value && !/^[0-9]{8,15}$/.test(hp.value)){
+                hp.classList.add('is-invalid');
+                valid=false;
             }
             if(tanggalInput && tanggalInput.value){
                 const today=new Date(); today.setHours(0,0,0,0);
                 if(new Date(tanggalInput.value)<today){ tanggalInput.classList.add('is-invalid'); valid=false; }
             }
-            const jml=document.getElementById('jumlah_penumpang');
-            if(jml && (parseInt(jml.value)<1||parseInt(jml.value)>50)){ jml.classList.add('is-invalid'); valid=false; }
+            const jml = document.getElementById('jumlah_penumpang');
+            if(jml){
+                const jumlah = parseInt(jml.value);
+
+                if(isNaN(jumlah) || jumlah < 1){
+                    jml.classList.add('is-invalid');
+                    valid = false;
+                }
+            }
             if(!valid){
                 e.preventDefault();
                 showToast('Harap lengkapi semua kolom dengan benar!','danger');
