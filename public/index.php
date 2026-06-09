@@ -87,12 +87,13 @@ include '../src/includes/header.php';
                     dengan armada terbaik serta Driver & Crew yang berpengalaman, ramah, sopan & profesional di bidang transportasi.
                 </p>
                 <p style="color:var(--abu-teks);line-height:1.85;margin-bottom:28px;font-size:0.97rem; text-align: justify;">
-                    Kami siap melayani study tour, study kampus, wisata keluarga, gathering perusahaan, serta perjalanan wisata lainnya.
+                    Kami siap melayani study tour, study kampus, ziarah Wali, wisata keluarga, gathering perusahaan, serta perjalanan wisata lainnya.
                     Percayakan perjalanan Anda bersama <strong style="color:var(--merah);">PT Janitra Surya Trans</strong>.
                 </p>
 
                 <!-- 3 keunggulan utama (persis dari proposal hal.2) -->
                 <div class="row g-3">
+
                     <div class="col-4 col-md-4 fade-in">
                         <div class="feature-card" style="background:var(--abu);border-radius:var(--radius-sm);padding:20px;text-align:center;border-top:3px solid var(--merah); height:100%;align-items:justify;">
                             <div style="margin-bottom:8px;">
@@ -148,12 +149,13 @@ include '../src/includes/header.php';
                         </div>
                     </div>
                 </div>
+            </div>
 
             <!-- Foto bus tampak depan/samping dari proposal -->
             <div class="col-lg-6 fade-in">
                 <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
                     <div style="grid-column:1/-1;border-radius:var(--radius);overflow:hidden;position:relative;">
-                        <img src="assets/images/galeri/janitra_merah_hitam.jpg"
+                        <img src="assets/images/janitra2bus.jpg"
                              alt="Bus Janitra Surya Tampak Samping"
                              style="width:100%;height:300px;object-fit:cover;">
                         <div style="position:absolute;top:14px;left:14px;background:var(--merah);color:white;padding:5px 14px;border-radius:4px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.72rem;text-transform:uppercase;letter-spacing:1px;">
@@ -166,7 +168,7 @@ include '../src/includes/header.php';
                              style="width:100%;height:260px;object-fit:cover;">
                     </div>
                     <div style="border-radius:var(--radius-sm);overflow:hidden;">
-                        <img src="assets/images/janitra1.jpg"
+                        <img src="assets/images/janitra_merah2.jpg"
                              alt="Bus Pariwisata"
                              style="width:100%;height:260px;object-fit:cover;">
                     </div>
