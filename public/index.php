@@ -21,7 +21,7 @@ include '../src/includes/header.php';
     <div style="position:absolute;top:0;right:0;z-index:1;
                 width:42%;height:100%;
                 background:rgba(0,0,0,0.2);
-                clip-path:polygon(18% 0,100% 0,100% 100%,0% 100%);"></div>
+                clip-path:polygon(16% 0,100% 0,100% 100%,0% 100%);"></div>
 
     <div class="container" style="position:relative;z-index:2;">
         <div class="row align-items-center g-5">
