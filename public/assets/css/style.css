@@ -69,8 +69,12 @@ img { max-width: 100%; }
     padding: 5px 0;
     font-size: 0.75rem;
     color: rgba(255,255,255,0.75);
+    font-size: 14px;
 }
-.navbar-topbar a { color: rgba(255,255,255,0.75); }
+.navbar-topbar a { 
+    text-decoration: none;
+    color: rgba(255,255,255,0.75); 
+}
 .navbar-topbar a:hover { color: white; }
 .nav-inner {
     display: flex;
@@ -1158,6 +1162,19 @@ img { max-width: 100%; }
 .fade-in.visible { opacity:1; transform:translateY(0); }
 
 /* ── RESPONSIVE ──────────────────────────────────── */
+@media (max-width: 768px) {
+    .navbar-topbar .d-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .topbar-left,
+    .topbar-right {
+        width: 100%;
+    }
+}
+
 @media(max-width:991px){
     .nav-logo {
         margin-left: 0;
