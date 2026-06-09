@@ -1175,6 +1175,11 @@ img { max-width: 100%; }
     }
 }
 
+@media (max-width: 768px) {
+    .navbar-topbar {
+        display: none;
+    }
+}
 @media(max-width:991px){
     .nav-logo {
         margin-left: 0;
