@@ -32,14 +32,106 @@ document.addEventListener('DOMContentLoaded', function () {
     // 3. Mobile nav toggle
     const tog = document.getElementById('navToggler');
     const menu = document.getElementById('navMenu');
-    if(tog && menu){
-        tog.addEventListener('click', function(){
-            menu.classList.toggle('open');
+
+    if (tog && menu) {
+
+        const icon = tog.querySelector('i');
+
+        tog.addEventListener('click', function () {
+
+            if (!menu.classList.contains('open')) {
+
+                // buka menu
+                menu.classList.add('open');
+
+                // ubah hamburger -> X
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+
+                // animasi turun
+                menu.animate(
+                    [
+                        {
+                            opacity: 0,
+                            transform: 'translateY(-25px)'
+                        },
+                        {
+                            opacity: 1,
+                            transform: 'translateY(0)'
+                        }
+                    ],
+                    {
+                        duration: 450,
+                        easing: 'cubic-bezier(.22,1,.36,1)',
+                        fill: 'forwards'
+                    }
+                );
+
+            } else {
+
+                // animasi tutup
+                const anim = menu.animate(
+                    [
+                        {
+                            opacity: 1,
+                            transform: 'translateY(0)'
+                        },
+                        {
+                            opacity: 0,
+                            transform: 'translateY(-25px)'
+                        }
+                    ],
+                    {
+                        duration: 300,
+                        easing: 'ease',
+                        fill: 'forwards'
+                    }
+                );
+
+                anim.onfinish = () => {
+
+                    menu.classList.remove('open');
+
+                    // ubah X -> hamburger
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                };
+            }
         });
-        // Close when clicking outside
-        document.addEventListener('click', function(e){
-            if(!tog.contains(e.target) && !menu.contains(e.target)){
-                menu.classList.remove('open');
+
+        // klik di luar menu
+        document.addEventListener('click', function (e) {
+
+            if (!tog.contains(e.target) && !menu.contains(e.target)) {
+
+                if (menu.classList.contains('open')) {
+
+                    const anim = menu.animate(
+                        [
+                            {
+                                opacity: 1,
+                                transform: 'translateY(0)'
+                            },
+                            {
+                                opacity: 0,
+                                transform: 'translateY(-25px)'
+                            }
+                        ],
+                        {
+                            duration: 300,
+                            easing: 'ease',
+                            fill: 'forwards'
+                        }
+                    );
+
+                    anim.onfinish = () => {
+
+                        menu.classList.remove('open');
+
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    };
+                }
             }
         });
     }
