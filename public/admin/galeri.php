@@ -142,8 +142,16 @@ $total = mysqli_num_rows($query);
                                 <td style="padding:13px 15px;font-weight:700;"><?= $no++ ?></td>
 
                                 <td style="padding:13px 15px;">
-                                    <img src="../assets/images/galeri/<?= $g['foto'] ?>"
-                                         style="width:90px;height:60px;object-fit:cover;border-radius:8px;">
+                                    <?php 
+                                    // Cek apakah isi database berupa URL Cloudinary atau file lokal
+                                    if (strpos($g['foto'], 'http') === 0) {
+                                        $src_gambar = $g['foto'];
+                                    } else {
+                                        $src_gambar = "../assets/images/galeri/" . $g['foto'];
+                                    }
+                                    ?>
+                                    <img src="<?= $src_gambar ?>"
+                                        style="width:90px;height:60px;object-fit:cover;border-radius:8px;">
                                 </td>
 
                                 <td style="padding:13px 15px;font-weight:700;color:var(--hitam);">
