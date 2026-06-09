@@ -68,18 +68,27 @@ include '../src/includes/header.php';
 
         <div id="galeriGrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px;">
 
-            <?php while($g = mysqli_fetch_assoc($query)): ?>
+        <?php while($g = mysqli_fetch_assoc($query)): ?>
 
-            <div class="g-item fade-in"
-                 data-kat="<?= htmlspecialchars($g['kategori']) ?>"
-                 style="aspect-ratio:4/3;"
-                 onclick="openLightbox(
-                    'assets/images/galeri/<?= htmlspecialchars($g['foto']) ?>',
-                    '<?= htmlspecialchars($g['judul']) ?>'
-                 )">
+        <?php 
+        // Lakukan pengecekan apakah file bersumber dari Cloudinary (URL) atau Lokal
+        if (strpos($g['foto'], 'http') === 0) {
+            $src_gambar = $g['foto'];
+        } else {
+            $src_gambar = "assets/images/galeri/" . $g['foto'];
+        }
+        ?>
 
-                <img src="assets/images/galeri/<?= htmlspecialchars($g['foto']) ?>"
-                     alt="<?= htmlspecialchars($g['judul']) ?>">
+        <div class="g-item fade-in"
+            data-kat="<?= htmlspecialchars($g['kategori']) ?>"
+            style="aspect-ratio:4/3;"
+            onclick="openLightbox(
+                '<?= addslashes($src_gambar) ?>',
+                '<?= htmlspecialchars($g['judul'], ENT_QUOTES) ?>'
+            )">
+
+            <img src="<?= $src_gambar ?>"
+                alt="<?= htmlspecialchars($g['judul']) ?>">
 
                 <div class="g-overlay">
                     <div>
