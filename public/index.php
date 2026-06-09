@@ -87,7 +87,7 @@ include '../src/includes/header.php';
                     dengan armada terbaik serta Driver & Crew yang berpengalaman, ramah, sopan & profesional di bidang transportasi.
                 </p>
                 <p style="color:var(--abu-teks);line-height:1.85;margin-bottom:28px;font-size:0.97rem; text-align: justify;">
-                    Kami siap melayani study tour, study kampus, ziarah Wali, wisata keluarga, gathering perusahaan, serta perjalanan wisata lainnya.
+                    Kami siap melayani study tour, study kampus, wisata keluarga, gathering perusahaan, serta perjalanan wisata lainnya.
                     Percayakan perjalanan Anda bersama <strong style="color:var(--merah);">PT Janitra Surya Trans</strong>.
                 </p>
 
