@@ -1,27 +1,36 @@
 <?php
 session_start();
+
 include '../../src/config/koneksi.php';
+require '../../src/config/cloudinary.php';
 
-$judul = $_POST['judul'];
-$kategori = $_POST['kategori'];
+use Cloudinary\Api\Upload\UploadApi;
 
-$uploadDir = '../assets/images/galeri/';
+$judul = mysqli_real_escape_string($conn, $_POST['judul']);
+$kategori = mysqli_real_escape_string($conn, $_POST['kategori']);
 
-$namaFile = time() . '_' . basename($_FILES['foto']['name']);
+try {
 
-if (move_uploaded_file($_FILES['foto']['tmp_name'], $uploadDir . $namaFile)) {
+    $result = (new UploadApi())->upload(
+        $_FILES['foto']['tmp_name'],
+        [
+            'folder' => 'janitra_galeri'
+        ]
+    );
+
+    $fotoUrl = $result['secure_url'];
 
     mysqli_query($conn, "
         INSERT INTO galeri(kategori, judul, foto)
-        VALUES('$kategori','$judul','$namaFile')
+        VALUES('$kategori','$judul','$fotoUrl')
     ");
 
     $_SESSION['success'] = 'Foto galeri berhasil diupload!';
-    header("Location: galeri.php");
-    exit;
 
-} else {
-    $_SESSION['error'] = 'Upload gagal!';
-    header("Location: galeri.php");
-    exit;
+} catch (Exception $e) {
+
+    $_SESSION['error'] = 'Upload gagal: ' . $e->getMessage();
 }
+
+header("Location: galeri.php");
+exit;
