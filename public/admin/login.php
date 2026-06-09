@@ -105,10 +105,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <i class="fas fa-arrow-left me-1"></i> Kembali ke Website
             </a>
         </div>
-
-        <div style="background:var(--abu);border-radius:var(--radius-sm);padding:10px 16px;margin-top:18px;text-align:center;font-size:0.75rem;color:var(--abu-teks);font-family:'Open Sans',sans-serif;">
-            🔑 Default login: <strong>admin</strong> / <strong>password</strong>
-        </div>
     </div>
 </div>
 <script>
