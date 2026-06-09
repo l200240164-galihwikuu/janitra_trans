@@ -1190,13 +1190,19 @@ img { max-width: 100%; }
 }
 
 @media(max-width:576px){
-    .fasilitas-item {
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        border-left: none !important;
-        border-top: 4px solid red;
+    .fasilitas-item{
+        text-align:center;
+        flex-direction:column;
+        align-items:center;
+        border-left:none !important;
+        border-top:4px solid red;
+
+        min-height:220px; /* bukan height */
+    }
+    .fasilitas-item img{
+        width:44px !important;
+        height:44px !important;
+        display:block;
     }
     .fasilitas-item > div:first-child {
         margin: 0 auto;
