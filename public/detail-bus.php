@@ -155,25 +155,24 @@ include '../src/includes/header.php';
         </div>
         <div class="row g-4">
             <?php
-            // Struktur array diubah: indeks [0] sekarang berisi path ke file icon PNG Anda
-            $fas = [
-                ['assets/images/icon/air-conditioner.png', 'AC Dingin & Lampu Baca', 'AC berkualitas tinggi dengan pendinginan merata di seluruh kabin. Serta lampu baca individual untuk kenyamanan membaca tanpa mengganggu penumpang lain.', 'assets/images/fasilitas/ac.jpg'],
-                ['assets/images/icon/bantall.png', 'Bantal & Selimut', 'Setiap penumpang mendapat bantal dan selimut untuk kenyamanan istirahat selama perjalanan panjang.', 'assets/images/fasilitas/bantal.jpeg'],
-                ['assets/images/icon/galon.png', 'Dispenser & Welcome Drink', 'Tersedia dispenser air minum dan welcome drink untuk menyambut penumpang di awal perjalanan.', 'assets/images/fasilitas/dispenser.jpg'],
-                ['assets/images/icon/TV.png', 'Android TV & Mic Wireless', 'Android TV layar besar dengan mic wireless untuk hiburan, karaoke, dan presentasi selama perjalanan.', 'assets/images/fasilitas/tv.jpeg'],
-                ['assets/images/icon/usb.png', 'USB Charger Setiap Kursi', 'Port USB charger tersedia di setiap kursi. Smartphone dan gadget Anda selalu siap digunakan.', 'assets/images/fasilitas/usb.jpeg'],
-                ['assets/images/icon/bagasii.png', 'Bagasi Dalam', 'Ruang bagasi dalam bus, cukup untuk koper dan barang bawaan seluruh rombongan.', 'assets/images/fasilitas/Bagasi_dalam.jpg'],
-                ['assets/images/icon/apar.png', 'APAR & Palu Pemecah Kaca', 'Standar K3 terpenuhi: APAR dan palu pemecah kaca tersedia di setiap bus untuk keselamatan penumpang.', 'assets/images/fasilitas/apar.jpeg'],
-                ['assets/images/icon/suspension.png', 'Air Suspension', 'Sistem air suspension memberikan kenyamanan maksimal. Guncangan di jalan diminimalisir untuk perjalanan halus.', 'assets/images/fasilitas/suspensi.jpg'],
-                ['assets/images/icon/legrest.png', 'Leg Rest', 'Kursi dapat direbahkan hingga posisi selonjor untuk kenyamanan maksimal selama perjalanan jauh.', 'assets/images/fasilitas/legrest.jpeg'],
-            ];
+                $fas = [
+                    ['assets/images/icon/air-conditioner.png','AC Dingin & Lampu Baca','AC berkualitas tinggi dengan pendinginan merata di seluruh kabin. Serta lampu baca individual untuk kenyamanan membaca tanpa mengganggu penumpang lain.','assets/images/fasilitas/ac.jpg'],
+                    ['assets/images/icon/bantall.png','Bantal & Selimut','Setiap penumpang mendapat bantal dan selimut untuk kenyamanan istirahat selama perjalanan panjang.','assets/images/fasilitas/bantal.jpeg'],
+                    ['assets/images/icon/galon.png','Dispenser & Welcome Drink','Tersedia dispenser air minum dan welcome drink untuk menyambut penumpang di awal perjalanan.','assets/images/fasilitas/dispenser.jpg'],
+                    ['assets/images/icon/TV.png','Android TV & Mic Wireless','Android TV layar besar dengan mic wireless untuk hiburan, karaoke, dan presentasi selama perjalanan.','assets/images/fasilitas/tv.jpeg'],
+                    ['assets/images/icon/usb.png','USB Charger Setiap Kursi','Port USB charger tersedia di setiap kursi. Smartphone dan gadget Anda selalu siap digunakan.','assets/images/fasilitas/usb.jpeg'],
+                    ['assets/images/icon/bagasii.png','Bagasi Dalam','Ruang bagasi dalam bus, cukup untuk koper dan barang bawaan seluruh rombongan.','assets/images/fasilitas/Bagasi_dalam.jpg'],
+                    ['assets/images/icon/apar.png','APAR & Palu Pemecah Kaca','Standar K3 terpenuhi: APAR dan palu pemecah kaca tersedia di setiap bus untuk keselamatan penumpang.','assets/images/fasilitas/apar.jpeg'],
+                    ['assets/images/icon/suspension.png','Air Suspension','Sistem air suspension memberikan kenyamanan maksimal. Guncangan di jalan diminimalisir untuk perjalanan halus.','assets/images/fasilitas/suspensi.jpg'],
+                    ['assets/images/icon/legrest.png','Leg Rest','Kursi dapat direbahkan hingga posisi selonjoran untuk kenyamanan maksimal selama perjalanan jauh.','assets/images/fasilitas/legrest.jpeg'],
+                ];
             foreach ($fas as $i => $f): ?>
             <div class="col-lg-4 col-md-6 fade-in" data-delay="<?= $i*50 ?>">
                 <div class="fas-card">
                     <div class="fas-img">
                         <img src="<?= $f[3] ?>" alt="<?= $f[1] ?>">
-                        <div class="fas-icon-wrap">
-                            <img src="<?= $f[0] ?>" alt="Icon <?= $f[1] ?>" class="fas-png-icon">
+                        <div class="fas-emoji">
+                            <img src="<?= $f[0] ?>" alt="<?= $f[1] ?>" style="width:40px;height:40px;object-fit:contain;">
                         </div>
                     </div>
                     <div class="fas-body">
