@@ -145,38 +145,40 @@ include '../src/includes/header.php';
     </div>
 </section>
 
-<!-- FASILITAS LENGKAP (dari proposal hal.3) -->
-<section style="padding:80px 0;background:white;">
+<!-- ═══ FASILITAS LENGKAP ════════════════════════════ -->
+<section class="fas-grid">
     <div class="container">
         <div class="text-center mb-5">
-            <div class="section-label" style="justify-content:center;">Spesifikasi Fasilitas</div>
-            <h2 class="section-title">Fasilitas <span class="red">Bus</span></h2>
-            <p class="section-subtitle mx-auto"> Janitra Surya Trans menyediakan berbagai fasilitas modern untuk menunjang kenyamanan dan keamanan perjalanan Anda.</p>
+            <div class="section-label" style="justify-content:center;">Fasilitas Bus</div>
+            <h2 class="section-title">Fasilitas <span class="red">Lengkap</span> di Dalam Bus</h2>
+            <p class="section-subtitle mx-auto">Semua fasilitas dari tersedia untuk kenyamanan perjalanan Anda.</p>
         </div>
         <div class="row g-4">
             <?php
-            $fasilitas_detail = [
-                ['assets/images/icon/air-conditioner.png','AC Dingin','AC berkualitas tinggi untuk kenyamanan penumpang di seluruh kabin.'],
-                ['assets/images/icon/bantall.png','Bantal & Selimut','Setiap penumpang mendapat bantal dan selimut untuk istirahat nyaman.'],
-                ['assets/images/icon/galon.png','Dispenser & Welcome Drink','Air minum tersedia dan welcome drink di awal perjalanan.'],
-                ['assets/images/icon/TV.png','Android TV','Layar Android TV besar untuk hiburan selama perjalanan.'],
-                ['assets/images/icon/music.png','Mic Wireless','Mic wireless untuk karaoke, presentasi, atau announcer.'],
-                ['assets/images/icon/usb.png','USB Charger Tiap Kursi','Port USB di setiap kursi agar gadget Anda selalu penuh baterai.'],
-                ['assets/images/icon/bagasii.png','Bagasi Luas','Ruang bagasi bawah yang sangat besar untuk seluruh rombongan.'],
-                ['assets/images/icon/apar.png','APAR & Palu Kaca (K3)','Standar keselamatan K3 terpenuhi di setiap perjalanan.'],
-                ['assets/images/icon/suspension.png','Air Suspension System','Suspensi udara untuk perjalanan mulus meski jalan tidak rata.'],
+            // Struktur array diubah: indeks [0] sekarang berisi path ke file icon PNG Anda
+            $fas = [
+                ['assets/images/icon/air-conditioner.png', 'AC Dingin & Lampu Baca', 'AC berkualitas tinggi dengan pendinginan merata di seluruh kabin. Serta lampu baca individual untuk kenyamanan membaca tanpa mengganggu penumpang lain.', 'assets/images/fasilitas/ac.jpg'],
+                ['assets/images/icon/bantall.png', 'Bantal & Selimut', 'Setiap penumpang mendapat bantal dan selimut untuk kenyamanan istirahat selama perjalanan panjang.', 'assets/images/fasilitas/bantal.jpeg'],
+                ['assets/images/icon/galon.png', 'Dispenser & Welcome Drink', 'Tersedia dispenser air minum dan welcome drink untuk menyambut penumpang di awal perjalanan.', 'assets/images/fasilitas/dispenser.jpg'],
+                ['assets/images/icon/TV.png', 'Android TV & Mic Wireless', 'Android TV layar besar dengan mic wireless untuk hiburan, karaoke, dan presentasi selama perjalanan.', 'assets/images/fasilitas/tv.jpeg'],
+                ['assets/images/icon/usb.png', 'USB Charger Setiap Kursi', 'Port USB charger tersedia di setiap kursi. Smartphone dan gadget Anda selalu siap digunakan.', 'assets/images/fasilitas/usb.jpeg'],
+                ['assets/images/icon/bagasii.png', 'Bagasi Dalam', 'Ruang bagasi dalam bus, cukup untuk koper dan barang bawaan seluruh rombongan.', 'assets/images/fasilitas/Bagasi_dalam.jpg'],
+                ['assets/images/icon/apar.png', 'APAR & Palu Pemecah Kaca', 'Standar K3 terpenuhi: APAR dan palu pemecah kaca tersedia di setiap bus untuk keselamatan penumpang.', 'assets/images/fasilitas/apar.jpeg'],
+                ['assets/images/icon/suspension.png', 'Air Suspension', 'Sistem air suspension memberikan kenyamanan maksimal. Guncangan di jalan diminimalisir untuk perjalanan halus.', 'assets/images/fasilitas/suspensi.jpg'],
+                ['assets/images/icon/legrest.png', 'Leg Rest', 'Kursi dapat direbahkan hingga posisi selonjor untuk kenyamanan maksimal selama perjalanan jauh.', 'assets/images/fasilitas/legrest.jpeg'],
             ];
-            foreach ($fasilitas_detail as $i => $f): ?>
-            <div class="col-6 col-lg-4 col-md-4 fade-in" data-delay="<?= $i*50 ?>">
-                <div class="fasilitas-item" style="background:var(--abu);border-radius:var(--radius-sm);border-top:5px solid #ff0000;padding:22px;display:flex;align-items:flex-start;gap:14px;transition:var(--transition);"
-                    onmouseover="this.style.background='white';this.style.boxShadow='0 10px 25px rgba(173, 52, 64, 0.3)'"
-                    onmouseout="this.style.background='var(--abu)';this.style.boxShadow='none'">
-                    <div style="width:44px;height:44px;flex-shrink:0;display:flex;align-items:center;justify-content:center;">
-                        <img src="<?= $f[0] ?>" alt="<?= $f[1] ?>" style="width:100%;height:100%;object-fit:contain;">
+            foreach ($fas as $i => $f): ?>
+            <div class="col-lg-4 col-md-6 fade-in" data-delay="<?= $i*50 ?>">
+                <div class="fas-card">
+                    <div class="fas-img">
+                        <img src="<?= $f[3] ?>" alt="<?= $f[1] ?>">
+                        <div class="fas-icon-wrap">
+                            <img src="<?= $f[0] ?>" alt="Icon <?= $f[1] ?>" class="fas-png-icon">
+                        </div>
                     </div>
-                    <div>
-                        <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.85rem;text-transform:uppercase;color:var(--hitam);margin-bottom:5px;"><?= $f[1] ?></div>
-                        <p style="font-size:0.82rem;color:var(--abu-teks);line-height:1.65;margin:0;"><?= $f[2] ?></p>
+                    <div class="fas-body">
+                        <h6><?= $f[1] ?></h6>
+                        <p><?= $f[2] ?></p>
                     </div>
                 </div>
             </div>

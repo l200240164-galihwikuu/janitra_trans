@@ -285,54 +285,6 @@ include '../src/includes/header.php';
     </div>
 </section>
 
-<!-- ═══ FASILITAS LENGKAP ════════════════════════════ -->
-<section class="fas-grid">
-    <div class="container">
-        <div class="text-center mb-5">
-            <div class="section-label" style="justify-content:center;">Fasilitas Bus</div>
-            <h2 class="section-title">Fasilitas <span class="red">Lengkap</span> di Dalam Bus</h2>
-            <p class="section-subtitle mx-auto">Semua fasilitas dari tersedia untuk kenyamanan perjalanan Anda.</p>
-        </div>
-        <div class="row g-4">
-            <?php
-            $fas = [
-                ['❄️','AC Dingin & Lampu Baca','AC berkualitas tinggi dengan pendinginan merata di seluruh kabin. Serta lampu baca individual untuk kenyamanan membaca tanpa mengganggu penumpang lain.',
-                 'assets/images/fasilitas/ac.jpg'],
-                ['🛏️','Bantal & Selimut','Setiap penumpang mendapat bantal dan selimut untuk kenyamanan istirahat selama perjalanan panjang.',
-                 'assets/images/fasilitas/bantal.jpeg'],
-                ['💧','Dispenser & Welcome Drink','Tersedia dispenser air minum dan welcome drink untuk menyambut penumpang di awal perjalanan.',
-                 'assets/images/fasilitas/dispenser.jpg'],
-                ['📺','Android TV & Mic Wireless','Android TV layar besar dengan mic wireless untuk hiburan, karaoke, dan presentasi selama perjalanan.',
-                 'assets/images/fasilitas/tv.jpeg'],
-                ['🔌','USB Charger Setiap Kursi','Port USB charger tersedia di setiap kursi. Smartphone dan gadget Anda selalu siap digunakan.',
-                 'assets/images/fasilitas/usb.jpeg'],
-                ['🧳','Bagasi Dalam','Ruang bagasi dalam bus, cukup untuk koper dan barang bawaan seluruh rombongan.',
-                 'assets/images/fasilitas/Bagasi_dalam.jpg'],
-                ['🛡️','APAR & Palu Pemecah Kaca','Standar K3 terpenuhi: APAR dan palu pemecah kaca tersedia di setiap bus untuk keselamatan penumpang.',
-                 'assets/images/fasilitas/apar.jpeg'],
-                ['🌬️','Air Suspension','Sistem air suspension memberikan kenyamanan maksimal. Guncangan di jalan diminimalisir untuk perjalanan halus.',
-                 'assets/images/fasilitas/suspensi.jpg'],
-                ['💺','Leg Rest','Kursi dapat direbahkan hingga posisi selonjor untuk kenyamanan maksimal selama perjalanan jauh.',
-                 'assets/images/fasilitas/legrest.jpeg'],
-            ];
-            foreach ($fas as $i => $f): ?>
-            <div class="col-lg-4 col-md-6 fade-in" data-delay="<?= $i*50 ?>">
-                <div class="fas-card">
-                    <div class="fas-img">
-                        <img src="<?= $f[3] ?>" alt="<?= $f[1] ?>">
-                        <div class="fas-emoji"><?= $f[0] ?></div>
-                    </div>
-                    <div class="fas-body">
-                        <h6><?= $f[1] ?></h6>
-                        <p><?= $f[2] ?></p>
-                    </div>
-                </div>
-            </div>
-            <?php endforeach; ?>
-        </div>
-    </div>
-</section>
-
 <!-- ═══ LOKASI KAMI ═══════════════════════════════════ -->
 <section style="padding:90px 0;background:#fff;">
     <div class="container">
