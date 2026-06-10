@@ -1462,4 +1462,7 @@ SMALL PHONE (EXTRA FIX)
         letter-spacing:0;
         margin-bottom:0 !important;
     }
+    .keung-card p {
+        display:none !important;
+    }
 }

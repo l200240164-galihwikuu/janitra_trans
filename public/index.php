@@ -186,7 +186,7 @@ include '../src/includes/header.php';
             <h2 class="section-title">Keunggulan <span class="red">Janitra Surya</span></h2>
             <p class="section-subtitle mx-auto">Kenyamanan dan keselamatan Anda adalah prioritas kami dalam setiap perjalanan.</p>
         </div>
-        <div class="row g-4">
+        <div class="row g-2 g-md-4">
             <?php
             $keung = [
                 ['../assets/images/icon/travel.png','Kelayakan Jalan Terjamin','Bus selalu dalam kondisi prima dengan perawatan rutin berkala. Surat kelayakan jalan lengkap dan sesuai peruntukan.'],
